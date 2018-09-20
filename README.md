@@ -8,6 +8,6 @@
 * `npm run build-and-serve` - Build project and start server from dist/ on http://localhost:3333
 
 ## Files:
-* `src/index.html` - Entry html
+* `src/index.html` - Index html
 * `src/style.scss` - Entry css
 * `src/main.js` - Entry js

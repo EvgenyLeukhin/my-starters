@@ -1,12 +1,10 @@
-const path = require('path');
-const express = require('express');
-const chalk = require('chalk');
-// const compression = require('compression');
-const server = express();
-const PORT = 3333;
-const PATH = path.join(__dirname, './public');
+const path = require('path'),
+  express = require('express'),
+  chalk = require('chalk'),
+  server = express(),
+  PORT = 3333,
+  PATH = path.join(__dirname, './public');
 
-// server.use(compression());
 server.use(express.static(PATH));
 
 server.listen(PORT, () => {
