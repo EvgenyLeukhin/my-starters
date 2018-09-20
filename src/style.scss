@@ -1,14 +1,20 @@
-
-@import 'scss/fonts';
-@import "scss/bootstrap";
-@import "scss/font-awesome";
-@import 'scss/vars';
+// imports
+@import 'scss/vars.scss';
+@import 'scss/fonts.scss';
+@import 'scss/no-script.scss';
+@import 'scss/bootstrap-import.scss';
+@import '~font-awesome/scss/font-awesome';
+$fa-font-path: "~font-awesome/fonts" !default;
 
 body {
-  padding-top: 70px;
-  padding-bottom: 70px;
+  font-family: $base-font;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.media {
-  margin-bottom: 30px;
+h1 {
+  color: $base-color;
+  text-decoration: underline;
 }

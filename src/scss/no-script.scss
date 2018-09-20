@@ -1,0 +1,67 @@
+@keyframes blinking {
+  0% {
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, center 15%;
+  }
+  50% {
+    background-position: 100px 100px, 140px 160px, 1130px 1270px, 170px 1100px, center 15%;
+  }
+  100% {
+    background-position: -200px -200px, -240px -260px, -2130px -2270px, -270px -2100px, center 15%;
+  }
+}
+
+.no-script {
+  position: relative;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px, center 15%;
+  background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px), radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px), radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px), radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px), url('../static/img/favicon.png');
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px, 150px auto;
+  background-repeat: repeat, repeat, repeat, repeat, no-repeat;
+}
+
+.no-script {
+  &__text {
+    position: absolute;
+    top: 45%;
+    font-size: 2em;
+    padding: 0 15px;
+    br {
+      display: none;
+    }
+    span {
+      color: #00d8ff;
+    }
+    a {
+      font-size: 0.55em;
+      color: #fff;
+      &:hover {
+        color: #00d8ff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .no-script {
+    animation-name: blinking;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    br {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .no-script {
+    &__text {
+      font-size: 1.5em;
+    }
+  }
+}
