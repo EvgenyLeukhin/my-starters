@@ -38,13 +38,13 @@ const path = {
     img:   'src/img/**/*.*',
     fonts: 'src/fonts/**/*.*'
   },
-  
+
   dist: {
-    html:  'dist/',
-    css:   'dist/css/',
-    js:    'dist/js/',
-    img:   'dist/img/',
-    fonts: 'dist/fonts/'
+    html:  'public/',
+    css:   'public/css/',
+    js:    'public/js/',
+    img:   'public/img/',
+    fonts: 'public/fonts/'
   }
 };
 
@@ -61,7 +61,7 @@ gulp.task('default', ['pre-build', 'browser-sync'], () => {
 // browser-sync
 gulp.task('browser-sync', () => {
   browserSync({
-    server: { baseDir: './dist/' },
+    server: { baseDir: './public/' },
     notify: true // alert windows
   });
   // browserSync.init({proxy: 'front-end.loc'}); // if local server with php/sql
@@ -113,12 +113,12 @@ gulp.task('fonts:watch', () => {
 
 // BUILD
 gulp.task('pre-build', [
-  'clear', 
-  'del', 
-  'html:watch', 
-  'scss:watch', 
-  'js:watch', 
-  'img:watch', 
+  'clear',
+  'del',
+  'html:watch',
+  'scss:watch',
+  'js:watch',
+  'img:watch',
   'fonts:watch',
 ]);
 
@@ -136,8 +136,8 @@ gulp.task('build', [
 // CLEAR cache
 gulp.task('clear', () => { return cache.clearAll(); });
 
-// DEL (delete dist/ before building)
-gulp.task('del', () => { return del.sync('./dist'); });
+// DEL (delete public/ before building)
+gulp.task('del', () => { return del.sync('./public'); });
 
 // html:build
 gulp.task('html:build', () => {
