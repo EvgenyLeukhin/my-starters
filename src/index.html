@@ -6,19 +6,22 @@
 </head>
 <body>
   //= html/header.html
-  <div class="container">
-    <!-- <img src="img/bootstrap.png" class="img-fluid" alt="Responsive image"> -->
-    <h5 class="mt-3 text-center">Build old-school projects</h5>
-    <ul>
-      <li><b>Bootstrap 4</b> (<a href="https://getbootstrap.com/" target="_blank">docs</a>, <a href="https://hackerthemes.com/bootstrap-cheatsheet/" target="_blank">cheat-sheet</a>)</li>
-      <li><b>Font Awesome</b> <i class="fa fa-comment"></i> (<a href="https://fontawesome.com/" target="_blank">docs</a>) </li>
-      <li><b>Gulp</b> (<a href="https://gulpjs.com/"  target="_blank">docs</a>)</li>
-    </ul>
-  </div>
-  //= html/footer.html
-  <div class="text-center">
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m3  l4 offset-l4">
+          <img class="materialboxed  responsive-img" src="img/materialize.png" data-caption="materialize.png">
+          <h5 class="center-align">Materialize CSS <a href="https://materializecss.com/" target="_blank">(docs)</a></h5>
+          <h5 class="center-align">jQuery <a href="https://jquery.com/" target="_blank">(docs)</a></h5>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="container  center-align  pop-ups">
+    <a class="waves-effect waves-light btn-small"><i class="material-icons left">cloud</i>button</a>
     //= html/pop-ups.html
   </div>
+  //= html/footer.html
   <script src="/js/bundle.min.js"></script>
 </body>
 </html>

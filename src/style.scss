@@ -3,6 +3,20 @@
 @import 'scss/vars';
 
 body {
-  // padding-top: 70px;
-  // padding-bottom: 70px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.page-footer {
+  margin-top: auto;
+  padding-top: 0;
+}
+
+.pop-ups {
+  margin-bottom: 25px;
+}
+
+nav .brand-logo {
+  position: static;
 }
