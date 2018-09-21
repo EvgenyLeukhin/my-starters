@@ -9,5 +9,7 @@
 
 $(document).ready(function () {
   //= js/bx-slider.js
+  //= js/izimodal.js
+  //= js/magnific-popup.js
 
 });

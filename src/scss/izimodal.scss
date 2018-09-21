@@ -1,0 +1,9 @@
+@import "../node_modules/izimodal/css/iziModal.min";
+
+.modals-group-frame, #player {
+  background-color: #000 !important;
+}
+
+.iziModal .iziModal-content {
+  box-sizing: border-box;
+}

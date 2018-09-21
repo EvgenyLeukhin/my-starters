@@ -1,0 +1,15 @@
+@import "../node_modules/magnific-popup/dist/magnific-popup";
+
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: pointer;
+}
+
+// стилизация окна
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 500px; // ширина окна
+  margin: 20px auto;
+}
