@@ -13,3 +13,12 @@
 * `src/main.js` - Entry js
 
 ## jQuery-Plugins:
+* bxslider
+* izimodal
+* jquery.maskedinput
+* magnific-popup
+* owl.carousel
+
+## CSS-Libs:
+* animate.css
+* normalize.css
