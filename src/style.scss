@@ -6,6 +6,10 @@
 @import 'scss/izimodal';
 @import 'scss/magnific-popup';
 
+body {
+  font-family: $font-family-sans-serif;
+}
+
 main {
   max-width: 750px;
   margin: auto;
