@@ -8,7 +8,10 @@
     "develop": "gulp",
     "build": "gulp build",
     "server": "node server.js",
-    "build-and-serve": "npm run build && npm run server"
+    "build-and-serve": "npm run build && npm run server",
+    "install-packages-npm": "npm install",
+    "install-packages-yarn": "yarn install",
+    "delete-packages": "gulp delete"
   },
   "repository": {
     "type": "git",
