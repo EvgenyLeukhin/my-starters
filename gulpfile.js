@@ -137,7 +137,8 @@ gulp.task('build', [
 gulp.task('clear', () => { return cache.clearAll(); });
 
 // DEL (delete public/ before building)
-gulp.task('del', () => { return del.sync('./public'); });
+gulp.task('del',    () => { return del.sync('./public'); });
+gulp.task('delete', () => { return del.sync('./node_modules'); });
 
 // html:build
 gulp.task('html:build', () => {

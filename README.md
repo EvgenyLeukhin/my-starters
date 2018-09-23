@@ -2,6 +2,7 @@
 
 ## Commands:
 * `npm install` - Install packages
+* `npm delete` - Delete packages
 * `npm start` - Start Development with browser-sync on http://localhost:3000/
 * `npm run build` - Build project to the public/
 * `npm run server` - Start server from public/ on http://localhost:3333
