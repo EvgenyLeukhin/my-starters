@@ -14,12 +14,12 @@
 * `src/main.js` - Entry js
 
 ## jQuery-Plugins:
-* bxslider
-* izimodal
-* jquery.maskedinput
-* magnific-popup
-* owl.carousel
+* bxslider [docs](https://bxslider.com/)
+* izimodal [docs](http://izimodal.marcelodolce.com/)
+* magnific-popup [docs](http://dimsemenov.com/plugins/magnific-popup/)
+* owl.carousel [docs](https://owlcarousel2.github.io/OwlCarousel2/)
+* jquery.maskedinput [docs](https://github.com/digitalBush/jquery.maskedinput)
 
 ## CSS-Libs:
-* animate.css
-* normalize.css
+* animate.css [docs](https://daneden.github.io/animate.css/)
+* normalize.css [docs](https://necolas.github.io/normalize.css/)

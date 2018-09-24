@@ -5,6 +5,8 @@
 @import 'scss/bx-slider';
 @import 'scss/izimodal';
 @import 'scss/magnific-popup';
+@import 'scss/animate';
+@import 'scss/owl-carousel';
 
 body {
   font-family: $font-family-sans-serif;
@@ -13,15 +15,18 @@ body {
 main {
   max-width: 750px;
   margin: auto;
+  overflow: hidden;
 }
-header, footer, h2 {
-  padding-top: 15px;
+h2 {
   text-align: center;
 }
-
-section {
-  padding-bottom: 30px;
+header, footer {
+  background: maroon;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
+
 
 
 
