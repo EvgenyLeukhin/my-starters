@@ -1,7 +1,7 @@
 # Gulp-jQuery-plugins
 
 ## Commands:
-* `npm install` or `yarn` - Install packages
+* `npm install` or `yarn install` - Install packages
 * `npm run delete` - Delete packages
 * `npm start` or `gulp` - Start Development with browser-sync on http://localhost:3000
 * `npm run build` - Build project to the public/
