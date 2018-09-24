@@ -1,0 +1,7 @@
+@import '../node_modules/normalize.css/normalize';
+@import 'scss/fonts';
+@import 'scss/vars';
+
+body {
+  font-family: $font-family-sans-serif;
+}
