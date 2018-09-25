@@ -8,7 +8,11 @@
     "develop": "webpack-dev-server --config=./webpack.dev.js --open google-chrome",
     "build": "webpack --config=./webpack.prod.js",
     "serve": "node server.js --open google-chrome",
-    "build-and-serve": "npm run build && npm run serve"
+    "build-and-serve": "npm run build && npm run serve",
+    "delete-build": "rimraf public",
+    "install-packages-npm": "npm install",
+    "install-packages-yarn": "yarn install",
+    "delete-packages": "rimraf node_modules"
   },
   "repository": {
     "type": "git",
@@ -72,6 +76,7 @@
     "optimize-css-assets-webpack-plugin": "^4.0.3",
     "postcss-loader": "^2.1.5",
     "prop-types": "^15.6.2",
+    "rimraf": "^2.6.2",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "uglifyjs-webpack-plugin": "^1.2.7",
