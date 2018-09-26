@@ -1,0 +1,9 @@
+<% include src/html/parts/head.ejs %>
+<% include src/html/parts/header.ejs %>
+    <h1>Second page - <b>Legolas</b></h1>
+    <img class="main" alt="legolas.jpg" src=<%=require("./../img/legolas.jpg") %> />
+    <a href="/" class="link">
+      <span>to index page</span>
+      <img width="50" height="50" class="arrow rotate" alt="arrow-next.png" src=<%=require("./../img/arrow-next.png") %> />
+    </a>
+<% include src/html/parts/footer.ejs %>
