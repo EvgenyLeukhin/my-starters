@@ -1,1 +1,1 @@
-# Webpack-jquery-MPA
+# Webpack-MPA-starter

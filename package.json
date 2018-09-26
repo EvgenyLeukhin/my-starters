@@ -1,7 +1,7 @@
 {
-  "name": "webpack-jquery-starter",
+  "name": "webpack-mpa-starter",
   "version": "1.0.0",
-  "description": "Build MPA with Webpack and jQuery",
+  "description": "Build MPA with Webpack",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --open google-chrome",
@@ -20,8 +20,8 @@
   "keywords": [
     "webpack-babel",
     "webpack-babel-starter",
-    "webpack-jquery",
-    "webpack-jquery-starter"
+    "webpack-map",
+    "webpack-mpa-starter"
   ],
   "author": "EvgenyLeukhin",
   "license": "MIT",

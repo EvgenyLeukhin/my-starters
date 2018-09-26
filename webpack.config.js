@@ -60,14 +60,14 @@ module.exports = {
   plugins: [
     // MPA
     new HtmlWebpackPlugin({
-      template: __dirname + '/src/html/index-page.ejs',
+      template: __dirname + '/src/ejs/index-page.ejs',
       filename: 'index.html',
       title: 'Index page',
       chunks: ['index'],
       favicon: './src/img/favicon.ico'
     }),
     new HtmlWebpackPlugin({
-      template: __dirname + '/src/html/second-page.ejs',
+      template: __dirname + '/src/ejs/second-page.ejs',
       filename: 'second.html',
       title: 'Second page',
       chunks: ['second'],

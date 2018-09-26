@@ -109,7 +109,7 @@ module.exports = {
     // MPA
     new HtmlWebpackPlugin({
       production: true,
-      template: __dirname + '/src/html/index-page.ejs',
+      template: __dirname + '/src/htmejs/index-page.ejs',
       filename: 'index.html',
       title: 'Index page',
       chunks: ['index'],
@@ -121,7 +121,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       production: true,
-      template: __dirname + '/src/html/second-page.ejs',
+      template: __dirname + '/src/ejs/second-page.ejs',
       filename: 'second.html',
       title: 'Second page',
       chunks: ['second'],
