@@ -109,7 +109,7 @@ module.exports = {
     // MPA
     new HtmlWebpackPlugin({
       production: true,
-      template: __dirname + '/src/htmejs/index-page.ejs',
+      template: __dirname + '/src/ejs/index-page.ejs',
       filename: 'index.html',
       title: 'Index page',
       chunks: ['index'],
