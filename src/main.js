@@ -8,8 +8,6 @@ import './fonts/Shentox-Semibold.ttf';
 import './style.scss';
 
 // JS-LIBS
-
-
 var a = () => {
   console.log('Hello Babel');
 };

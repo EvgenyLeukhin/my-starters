@@ -117,7 +117,19 @@ module.exports = {
         removeComments: true,
         collapseWhitespace: true,
         conservativeCollapse: true
-      }
+      },
+      description: 'Some descripton',
+      author: 'Some author',
+      keywords: 'keyword1 keyword2',
+      image: 'http://somesite.com/img/png',
+      itemprop: {
+        name: 'Index page',
+        description: 'Some descripton',
+        image: 'http://somesite.com/img/png'
+      },
+      og: {},
+      twitter: {},
+
     }),
     new HtmlWebpackPlugin({
       production: true,
@@ -129,7 +141,18 @@ module.exports = {
         removeComments: true,
         collapseWhitespace: true,
         conservativeCollapse: true
-      }
+      },
+      description: 'Some descripton2',
+      author: 'Some author2',
+      keywords: 'keyword12 keyword22',
+      image: 'http://somesite.com/img2.png',
+      itemprop: {
+        name: 'Second page',
+        description: 'Some descripton2',
+        image: 'http://somesite.com/img2.png'
+      },
+      og: {},
+      twitter: {},
     }),
   ]
 };
