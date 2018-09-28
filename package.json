@@ -8,10 +8,10 @@
     "build": "webpack --config=webpack.config.prod.js",
     "serve": "node server.js --open google-chrome",
     "build-and-serve": "npm run build && npm run serve",
-    "delete-build": "rimraf public",
+    "delete-build": "rimraf public || echo 'Alredy deleted'",
     "install-packages-npm": "npm install",
     "install-packages-yarn": "yarn install",
-    "delete-packages": "rimraf node_modules"
+    "delete-packages": "rimraf node_modules || echo 'Alredy deleted'"
   },
   "repository": {
     "type": "git",
