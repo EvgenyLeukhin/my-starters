@@ -6,24 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <% if (htmlWebpackPlugin.options.production) { %>
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta name="image" content="<%= htmlWebpackPlugin.options.image %>">
+    <meta name="author" content="<%= htmlWebpackPlugin.options.author %>">
     <meta name="fb:admins" content="">
-    <meta name="yandex-verification" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@twitter-username">
     <meta name="twitter:creator" content="@twitter-username">
+    <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>">
+    <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="twitter:url" content="<%= htmlWebpackPlugin.options.url %>">
+    <meta name="twitter:image" content="<%= htmlWebpackPlugin.options.image %>">
     <meta name="twitter:image:width" content="610">
     <meta name="twitter:image:height" content="610">
+    <meta name="yandex-verification" content="">
+    <meta itemprop="name" content="<%= htmlWebpackPlugin.options.title %>" />
+    <meta itemprop="description" content="<%= htmlWebpackPlugin.options.description %>" />
+    <meta itemprop="image" content="<%= htmlWebpackPlugin.options.image %>" />
     <meta property="og:locale" content="en_US">
     <meta property="og:site_name" content="sitename">
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+    <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta property="og:url" content="<%= htmlWebpackPlugin.options.url %>">
+    <meta property="og:type" content="<%= htmlWebpackPlugin.options.type %>">
+    <meta property="og:image" content="<%= htmlWebpackPlugin.options.image %>">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="618">
-    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
-    <meta name="author" content="<%= htmlWebpackPlugin.options.author %>">
-    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
-    <meta name="image" content="<%= htmlWebpackPlugin.options.image %>">
-    <meta itemprop="name" content="<%= htmlWebpackPlugin.options.itemprop.name %>" />
-    <meta itemprop="description" content="<%= htmlWebpackPlugin.options.itemprop.description %>" />
-    <meta itemprop="image" content="<%= htmlWebpackPlugin.options.itemprop.image %>" />
     <link rel="stylesheet" href="/bundle.css">
   <% } %>
 </head>

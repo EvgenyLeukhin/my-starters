@@ -1,4 +1,7 @@
 const path = require('path');
+const productionHost = 'https://some-host.com';  // enter after hosting
+
+// node packages
 const WebpackBar = require('webpackbar');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
@@ -107,52 +110,43 @@ module.exports = {
       background: '#fff'
     }),
     // MPA
+    // index page
     new HtmlWebpackPlugin({
       production: true,
       template: __dirname + '/src/ejs/index-page.ejs',
       filename: 'index.html',
-      title: 'Index page',
-      chunks: ['index'],
+      chunks: ['index'],  // ???
       minify: {
         removeComments: true,
         collapseWhitespace: true,
         conservativeCollapse: true
       },
-      description: 'Some descripton',
-      author: 'Some author',
-      keywords: 'keyword1 keyword2',
-      image: 'http://somesite.com/img/png',
-      itemprop: {
-        name: 'Index page',
-        description: 'Some descripton',
-        image: 'http://somesite.com/img/png'
-      },
-      og: {},
-      twitter: {},
-
+      title: 'Index page',
+      description: 'Index page description',
+      image: `${productionHost}/img/some-img1.png`,
+      keywords: 'keyword11 keword12 keyword13',
+      author: 'Some author1',
+      url: `${productionHost}`,
+      type: 'website',
     }),
+    // second page
     new HtmlWebpackPlugin({
       production: true,
       template: __dirname + '/src/ejs/second-page.ejs',
       filename: 'second.html',
-      title: 'Second page',
       chunks: ['second'],
       minify: {
         removeComments: true,
         collapseWhitespace: true,
         conservativeCollapse: true
       },
-      description: 'Some descripton2',
+      title: 'Second page',
+      description: 'Second page description',
+      image: `${productionHost}/img/some-img2.png`,
+      keywords: 'keyword21 keword22 keyword23',
       author: 'Some author2',
-      keywords: 'keyword12 keyword22',
-      image: 'http://somesite.com/img2.png',
-      itemprop: {
-        name: 'Second page',
-        description: 'Some descripton2',
-        image: 'http://somesite.com/img2.png'
-      },
-      og: {},
-      twitter: {},
+      url: `${productionHost}/second`,
+      type: 'article',
     }),
   ]
 };
