@@ -29,6 +29,10 @@
     "url": "https://github.com/EvgenyLeukhin/my-starters/issues"
   },
   "homepage": "https://github.com/EvgenyLeukhin/my-starters#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.0",
     "autoprefixer": "^9.1.5",
