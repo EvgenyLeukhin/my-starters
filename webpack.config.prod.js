@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const productionHost = 'https://some-host.com';  // enter after hosting
 
 // node packages
@@ -148,5 +149,9 @@ module.exports = {
       url: `${productionHost}/second`,
       type: 'article',
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ]
 };

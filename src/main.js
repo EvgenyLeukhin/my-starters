@@ -8,17 +8,15 @@ import './fonts/Shentox-Semibold.ttf';
 import './style.scss';
 
 // JS-LIBS
-import $ from 'jquery';
-window.jQuery = $;
-window.$ = $;
+
 
 // jQuery-example
 $(document).ready(() => {
-  $('body').css('background', '#dff');
+  $('body').css('background', 'lightgray');
 });
-
 
 var a = () => {
   console.log('Hello Babel');
 };
 
+a();
