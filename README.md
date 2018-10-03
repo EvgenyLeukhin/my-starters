@@ -1,4 +1,4 @@
-# Webpack-React starter (with Bootstrap 4)
+# Webpack-React starter (with Redux)
 
 ## Commands:
 * `npm start` - Start Development with dev-server on http://localhost:8888
