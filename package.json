@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/EvgenyLeukhin/my-starters#readme",
   "dependencies": {
+    "bxslider": "^4.2.14",
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0"
   },

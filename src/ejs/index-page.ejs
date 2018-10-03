@@ -1,9 +1,10 @@
 <% include src/ejs/parts/head.ejs %>
-<% include src/ejs/parts/header.ejs %>
+<% include src/ejs/parts/header %>
     <h1>Index page - <b>Thranduil</b></h1>
     <img class="main" alt="thranduil.jpg" src=<%=require("./../img/thranduil.jpg") %> />
     <a href="/second.html" class="link">
       <span>to second page</span>
       <img width="50" height="50" class="arrow" alt="arrow-next.png" src=<%=require("./../img/arrow-next.png") %> />
     </a>
-<% include src/ejs/parts/footer.ejs %>
+<% include src/ejs/plugins/bxslider %>
+<% include src/ejs/parts/footer %>

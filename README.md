@@ -1,4 +1,4 @@
-# Webpack-MPA-starter
+# Webpack-MPA-starter with jQuery-frontend
 
 ## Commands:
 * `npm install` or `yarn install` - Install packages
