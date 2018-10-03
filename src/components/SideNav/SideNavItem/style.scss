@@ -1,0 +1,41 @@
+.sidenav-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+  a {
+    padding: 5px;
+    color: inherit;
+    text-decoration: none;
+    &.active {
+      color: #d71e54;
+    }
+    span {
+      transition: all 0.2s;
+    }
+    .fa {
+      min-width: 30px;
+      display: inline-flex;
+      justify-content: center;
+      padding: 5px;
+    }
+    &:hover {
+      text-decoration: none;
+      span {
+        color: #fff;
+        transition: all 0.2s;
+        text-shadow: 0 0 5px #d71e54;
+      }
+    }
+    &.active {
+      pointer-events: none;
+      span {
+        color: #d71e54;
+      }
+      &:hover {
+        span {
+          text-decoration: none;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
