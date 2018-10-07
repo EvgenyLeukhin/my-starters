@@ -41,3 +41,29 @@ const someComponent = (props) => {
   );
 };
 // =========================== MAPING COMPONENTS  =========================== -<
+
+
+
+
+
+import React from 'react'
+const data = [
+  {
+    name: 'John',
+    age: 32
+  },
+  {
+    name: 'Jack',
+    age: 33
+  }
+]
+const maping = () => {
+  data.map((data, index) => {
+    return(
+      <div>
+        <p>{data.name}</p>
+        <p>{data.age}</p>
+      </div>
+    )
+  })
+}

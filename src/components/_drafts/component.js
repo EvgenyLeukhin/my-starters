@@ -4,7 +4,7 @@ const Something = () => <h1>Something</h1>;
 export default Something;
 
 
-// class-based component (when need change state)
+// class-based component (when need change state) have state
 import React, { Component } from 'react';
 class Life extends Component {
   state = { some: 'Some' }
