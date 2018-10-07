@@ -1,6 +1,6 @@
 // function-based component
 import React from 'react';
-const Something = () => (<h1>Something</h1>);
+const Something = () => <h1>Something</h1>;
 export default Something;
 
 
@@ -15,3 +15,19 @@ class Life extends Component {
   }
 }
 export default Life;
+
+
+// JS logic
+import React from 'react'
+
+class SomeClass extends React.Component {
+  render() {
+    const some = <h1>Something</h1>;
+    const showText = true;
+    return(
+      <div>{showText ? some : null}</div>
+    );
+  }
+}
+
+export default SomeClass;
