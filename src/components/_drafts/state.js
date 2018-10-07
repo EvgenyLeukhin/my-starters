@@ -11,7 +11,7 @@ class StateClass extends Component {
   render() {
     const {name, age} = this.props;
     return (
-      <div>
+      <div onClick={this.someClassMethod}>
         <p>{name}</p>
         <p>{age}</p>
       </div>
