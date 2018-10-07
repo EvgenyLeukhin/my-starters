@@ -1,6 +1,6 @@
 // Styling aproaches
 // 1. Bundle.css - all css in one file, global (OLD-school) - one link, cache
-// 2. CSS in <style> inside <head> (import to component, no global) - many style tags
+// 2. CSS in <style> inside <head> (import to component, no global) - many style tags (style-loader)
 // 3. CSS in JS - const style = { ... } + Radium
 // 4. CSS-modules (import classes from css-file to component) - unique className
 
