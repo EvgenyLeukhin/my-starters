@@ -3,10 +3,13 @@ import React, { Component } from 'react'
 class StateClass extends Component {
   state = {
     name: 'John Smith',
-    age: 32
+    age: 32,
+    something: true
   }
   someClassMethod = () => {
-    // do something
+    this.setState({
+      something: !this.state.something // toggle something
+    })
   };
   render() {
     const {name, age} = this.props;
@@ -19,3 +22,10 @@ class StateClass extends Component {
   }
 }
 export default StateClass;
+
+// можно писать функцию прямо в онКлик
+// onClick = {
+//   this.setState({
+//     something: !this.state.something // toggle something
+//   })
+// }

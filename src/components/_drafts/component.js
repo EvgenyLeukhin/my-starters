@@ -8,6 +8,8 @@ export default Something;
 import React, { Component } from 'react';
 class Life extends Component {
   state = { some: 'Some' }
+
+  // метод класса
   changeName = () => this.setState({ some: 'Some another'})
 
   render() {
@@ -18,8 +20,7 @@ export default Life;
 
 
 // JS logic
-import React from 'react'
-
+import React from 'react';
 class SomeClass extends React.Component {
   render() {
     const some = <h1>Something</h1>;

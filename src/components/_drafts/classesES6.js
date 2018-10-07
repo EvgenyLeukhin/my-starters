@@ -28,13 +28,13 @@ class Someclass {
     this.name = name;
     this.age = age;
   }
-  sayHelo() {
+  sayHello() {
     return `Hello, ${this.name}`;
   }
 }
 
 const classCopy = new Someclass('John', 32);
-console.log(classCopy.greet());
+console.log(classCopy.sayHello());
 
 // Подкласс
 class Someclass2 extends Someclass {
