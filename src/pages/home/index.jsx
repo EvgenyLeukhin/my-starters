@@ -24,8 +24,9 @@ const data = {
 const Person = props => {
   const { name, age, city } = props.personProps;
   return(
-    <div>
-      <span>{name}</span> - <span>{age}</span> - <b>{city}</b>
+    <div style={{marginBottom: 15}}>
+      <h5>{name} <span onClick={props.click}>+</span></h5>
+      <span>{age}</span> - <b>{city}</b>
     </div>
   );
 };
@@ -52,6 +53,7 @@ const Home = () => (
         <Person
           personProps={item}
           key={index}
+          click ={() => alert(123)}
         />
       )}
     </div>
