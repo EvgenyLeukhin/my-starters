@@ -28,6 +28,7 @@ class Person extends React.Component {
   showDataToggle = () => {
     this.setState({ dataShow: !this.state.dataShow});
   }
+  showAge = name => console.log(name);
   render() {
     const { name, age, city } = this.props.personProps;
     return (
@@ -35,7 +36,7 @@ class Person extends React.Component {
         <strong onClick={this.showDataToggle} style={{cursor: 'pointer'}}>{name}</strong>
         { this.state.dataShow ?
           <React.Fragment>
-            <span> - {age}, </span>
+            <span onClick={this.showAge.bind(this, age)}> - {age}, </span>
             <b>{city}</b>
           </React.Fragment> : null }
       </div>
