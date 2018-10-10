@@ -20,44 +20,48 @@ const data = {
   ]
 };
 
+class Person extends React.Component {
+  state = {
+    dataShow: true
+  }
+  // all logic inside current component
+  showDataToggle = () => {
+    this.setState({ dataShow: !this.state.dataShow});
+  }
+  render() {
+    const { name, age, city } = this.props.personProps;
+    return (
+      <div style={{marginBottom: 15}}>
+        <strong onClick={this.showDataToggle} style={{cursor: 'pointer'}}>{name}</strong>
+        { this.state.dataShow ?
+          <React.Fragment>
+            <span> - {age}, </span>
+            <b>{city}</b>
+          </React.Fragment> : null }
+      </div>
+    );
+  }
+}
 
-const Person = props => {
-  const { name, age, city } = props.personProps;
-  return(
-    <div style={{marginBottom: 15}}>
-      <h5>{name} <span onClick={props.click}>+</span></h5>
-      <span>{age}</span> - <b>{city}</b>
-    </div>
-  );
-};
+class Home extends React.Component {
+  render() {
+    return(
+      <main className="home">
+        <Helmet title='Home page' />
+        <h1>Home page <FontAwesome name={'home'} spin={false} style={{ color: 'green' }} /></h1>
+        <Link to='about'><img src={Mobile} alt="alt text" width={250} /> </Link>
+        <p>Some content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam ipsum iure similique, culpa eum reiciendis tenetur ipsam, doloremque cupiditate molestiae! Totam quasi, dolorum reprehenderit vero ea eos culpa error?</p>
+        <hr />
 
-const Home = () => (
-  <main className="home">
-    <Helmet title='Home page' />
-    <h1>Home page <FontAwesome name={'home'} spin={false} style={{ color: 'green' }} /></h1>
-    <Link to='about'><img src={Mobile} alt="alt text" width={250} /> </Link>
-    <p>Some content: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum numquam ipsum iure similique, culpa eum reiciendis tenetur ipsam, doloremque cupiditate molestiae! Totam quasi, dolorum reprehenderit vero ea eos culpa error?</p>
-    <hr/>
-    <h3>Maping data</h3>
-    <div>
-      {data.persons.map((item, index) =>
-        // Classical aproach
-        // <Person
-        //   name={item.name}
-        //   age={item.age}
-        //   city={item.city}
-        //   key={index}
-        // />
-
-        // short way
-        <Person
-          personProps={item}
-          key={index}
-          click ={() => alert(123)}
-        />
-      )}
-    </div>
-  </main>
-);
+        <h3>Maping data</h3>
+        <div>
+          {data.persons.map((item, index) =>
+            <Person personProps={item} key={index} />
+          )}
+        </div>
+      </main>
+    );
+  }
+}
 
 export default Home;
