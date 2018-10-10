@@ -65,3 +65,10 @@ class Home extends React.Component {
 }
 
 export default Home;
+
+
+// method with parametr - BIND
+// onClick={this.showDataToggle.bind(this, name)}
+// showDataToggle = name => {
+//   console.log(name);
+// }
