@@ -17,6 +17,11 @@ const data = {
       age: 33,
       city: 'Toronto',
     },
+    {
+      name: 'Paul',
+      age: 30,
+      city: 'Antario ',
+    },
   ]
 };
 
@@ -28,7 +33,10 @@ class Person extends React.Component {
   showDataToggle = () => {
     this.setState({ dataShow: !this.state.dataShow});
   }
-  showAge = name => console.log(name);
+
+
+  showAge = age => console.log(age);
+
   render() {
     const { name, age, city } = this.props.personProps;
     return (
@@ -38,6 +46,7 @@ class Person extends React.Component {
           <React.Fragment>
             <span onClick={this.showAge.bind(this, age)}> - {age}, </span>
             <b>{city}</b>
+            <span onClick={this.props.deleteHandler} style={{float: 'right'}}>Delete it</span>
           </React.Fragment> : null }
       </div>
     );
@@ -45,6 +54,12 @@ class Person extends React.Component {
 }
 
 class Home extends React.Component {
+  state = {
+
+  };
+  deleteHandler = () => {
+    console.log(123);
+  };
   render() {
     return(
       <main className="home">
@@ -57,7 +72,7 @@ class Home extends React.Component {
         <h3>Maping data</h3>
         <div>
           {data.persons.map((item, index) =>
-            <Person personProps={item} key={index} />
+            <Person personProps={item} key={index} deleteHandler={this.deleteHandler} />
           )}
         </div>
       </main>

@@ -35,13 +35,13 @@ export default class Contacts extends React.Component {
     return (
       <div>
         {contacts.map(item => (
-          <Contact
-            name={item.name}
-            age={item.age}
-            key={item.id}
-          />
+          // <Contact
+          //   name={item.name}
+          //   age={item.age}
+          //   key={item.id}
+          // />
 
-          // <Contact contact={item} /> // short way
+          <Contact contact={item} /> // short way
         ))}
       </div>
     )
