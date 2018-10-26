@@ -12,13 +12,13 @@ const development = {
 
   module: {
     rules: [
-      // CSS
+      // CSS // with style-loader
       {
         test: /\.(sa|sc|c)ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
 
-      // IMG
+      // IMG //
       {
         test: /\.(png|jp(e*)g|gif|svg)$/,
         use: [{

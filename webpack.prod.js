@@ -17,7 +17,7 @@ const production = {
 
   module: {
     rules: [
-      // CSS //
+      // CSS // with extract-plugin
       {
         test: /\.(sa|sc|c)ss$/,
         use: [
@@ -28,7 +28,7 @@ const production = {
         ]
       },
 
-      // IMGs //
+      // IMG //
       {
         test: /\.(png|jp(e*)g|gif|svg)$/,
         use: [
@@ -78,14 +78,14 @@ const production = {
 
     new HtmlWebpackPlugin({
       template: __dirname + '/src/index.html',
-      minify: {
+      minify: {                                 // min html
         removeComments: true,
         collapseWhitespace: true,
         conservativeCollapse: true
       }
     }),
 
-    new MiniCssExtractPlugin({ filename: 'bundle-[hash:8].css' }),
+    new MiniCssExtractPlugin({ filename: 'bundle-[hash:8].css' }), // css bundle
 
     new BundleAnalyzerPlugin({
       openAnalyzer: false,

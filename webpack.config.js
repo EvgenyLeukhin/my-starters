@@ -17,14 +17,14 @@ module.exports = {
 
   module: {
     rules: [
-      // JS
+      // JS //
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader'
       },
 
-      // FONTS
+      // FONTS //
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: [
