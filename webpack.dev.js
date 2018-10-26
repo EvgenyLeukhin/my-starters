@@ -42,3 +42,26 @@ const development = {
 };
 
 module.exports = merge(common, development);
+
+
+
+
+// // CSS-modules
+// {
+//   test: /\.css$/,
+//   use: [
+//     { loader: 'style-loader' },
+//     {
+//       loader: 'css-loader',
+//       query: {
+//        modules: true,
+//        localIndentName: true
+//       }
+//     }
+//   ]
+// }
+
+// import styles from './styles.css';
+
+// <div className={styles.someclass}>
+
