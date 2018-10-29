@@ -55,7 +55,7 @@ module.exports = merge(common, development);
 //       loader: 'css-loader',
 //       query: {
 //        modules: true,
-//        localIndentName: true
+//        localIndentName: "[name]__[local]__[hash:base64:8]"
 //       }
 //     }
 //   ]
