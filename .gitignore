@@ -1,7 +1,8 @@
-node_modules
-public
-.DS_Store
-.cache/
+node_modules/
+public/
 .vscode/
+.DS_Store
+.cache
 .idea
-src/_design
+yarn.lock
+package-lock.json
