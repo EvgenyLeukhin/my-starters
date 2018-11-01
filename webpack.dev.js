@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const development = {
   mode:          'development',
   watch:          true,
-  devServer:    { port: 8888, overlay: true },
+  devServer:    { port: 8888, overlay: true, contentBase: 'public' },
   watchOptions: { ignored: /node_modules/ },
   output:       { filename: 'bundle.js' },
   devtool:       'cheap-module-source-map',
