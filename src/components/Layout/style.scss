@@ -1,0 +1,15 @@
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+svg {
+  border: 1px solid red;
+}

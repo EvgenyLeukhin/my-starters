@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["env", {
+      "targets": { "browsers": [ "last 2 versions", "> 0.5%", "not ie <= 10" ] },
+      "debug": true
+    }],
+    "react"
+  ],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "syntax-dynamic-import"
+  ],
+  "ignore": [ "/node_modules/" ]
+}
