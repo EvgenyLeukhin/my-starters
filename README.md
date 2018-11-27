@@ -12,4 +12,4 @@
 ## React
 * [react-tiny](https://github.com/EvgenyLeukhin/my-starters/tree/react-tiny)
 * [react-md-blog](https://github.com/EvgenyLeukhin/my-starters/tree/react-md-blog)
-* [webpack-react-starter](https://github.com/EvgenyLeukhin/my-starters/tree/webpack-react-starter)
+* [react-mpa](https://github.com/EvgenyLeukhin/my-starters/tree/react-mpa)
