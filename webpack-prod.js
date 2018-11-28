@@ -19,11 +19,11 @@ module.exports = {
   mode: 'production',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, 'dist'),
     publicPath: '/' // where will be bundle in dist
   },
   devServer: {
-    contentBase: 'public',
+    contentBase: 'dist',
     overlay: true
   },
   module: {
@@ -101,7 +101,7 @@ module.exports = {
   },
   plugins: [
     new WebpackBar(),
-    new CleanWebpackPlugin('public'),
+    new CleanWebpackPlugin('dist'),
     new CompressionPlugin({ algorithm: 'gzip' }),
     new MiniCssExtractPlugin({ filename: 'bundle.css' }),
     new FaviconsWebpackPlugin({

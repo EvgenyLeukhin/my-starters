@@ -3,38 +3,39 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: {
-    main: ['./src/main.js']
-  },
-  mode: 'development',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
-    publicPath: '/' // where will be bundle in dist
-  },
+
+  entry: './src/main.js', mode: 'development',
+
   devServer: {
-    contentBase: 'public',
+    contentBase: 'dist',
     overlay: true
   },
+
+  watchOptions: { ignored: /node_modules/ },
+
+  devtool: 'cheap-module-source-map',
+
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/' // where will be bundle in dist
+  },
+
   module: {
     rules: [
       // JS //
-      {
-        test: /\.js$/,
+      { test: /\.js$/,
         exclude: /node_modules/,
-        use: 'babel-loader'
-      },
+        use: 'babel-loader' },
+
       // HTML //
-      {
-        test: /\.ejs$/,
-        use: 'ejs-compiled-loader'
-      },
+      { test: /\.ejs$/,
+        use: 'ejs-compiled-loader' },
 
       // CSS //
-      {
-        test: /\.(sa|sc|c)ss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      },
+      { test: /\.(sa|sc|c)ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'] },
+
       // IMG //
       {
         test: /\.(png|jp(e*)g|gif|svg)$/,
@@ -46,19 +47,20 @@ module.exports = {
           }
         }]
       },
+
       // FONTS
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: { name: 'fonts/[name].[ext]' }
-          }
-        ]
+        use: [{
+          loader: 'file-loader',
+          options: { name: 'fonts/[name].[ext]' }
+        }]
       },
     ]
   },
+
   plugins: [
+
     // MPA
     new HtmlWebpackPlugin({
       template: __dirname + '/src/ejs/index-page.ejs',
@@ -67,6 +69,7 @@ module.exports = {
       chunks: ['index'],
       favicon: './src/img/favicon.ico'
     }),
+
     new HtmlWebpackPlugin({
       template: __dirname + '/src/ejs/second-page.ejs',
       filename: 'second.html',
@@ -74,6 +77,8 @@ module.exports = {
       chunks: ['second'],
       favicon: './src/img/favicon.ico'
     }),
+
+    // jQuery
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'

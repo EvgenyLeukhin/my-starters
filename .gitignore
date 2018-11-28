@@ -6,3 +6,5 @@ dist
 .vscode/
 .idea
 src/_design
+yarn.lock
+package-lock.json
