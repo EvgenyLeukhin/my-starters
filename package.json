@@ -11,7 +11,7 @@
     "delete-packages": "rimraf node_modules || echo 'Alredy deleted'",
     "install-packages-npm": "npm install",
     "install-packages-yarn": "yarn install",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
