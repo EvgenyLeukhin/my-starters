@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-
 import * as serviceWorker from './js/serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// add bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+ReactDOM.render(
+  <App />, 
+  document.getElementById('root')
+);
+
 serviceWorker.unregister();
