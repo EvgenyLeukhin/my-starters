@@ -8,15 +8,9 @@ class Events extends Component {
     data: dataJson
   }
 
-  // оперируем id
-  // deleteContact = (id) => {
-  //   // копия data
-  //   const contactsCopy = this.state.data.contacts;
-  //   const newContacts = contactsCopy.filter(item => 
-  //     item.id !== id
-  //   );
-  //   this.setState({data:newContacts});
-  // }
+  changeState = (id) => {
+    alert(id);
+  }
 
   render() {
     // мапируем data из state
@@ -27,7 +21,7 @@ class Events extends Component {
           <Contacts 
             key={items.id}
             contactsData={items} 
-            // click={this.deleteContact.bind(this, items.id)} // onClick as prop
+            click={this.changeState.bind(this, items.id)}
           />
         ))}
       </div>
