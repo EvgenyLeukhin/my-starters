@@ -5,23 +5,27 @@ import dataJson from './../OutputData/data.json';
 class Events extends Component {
   // переносим json в state
   state = { 
-    data: dataJson
+    contacts: dataJson.contacts,
   }
 
-  changeState = (id) => {
-    alert(id);
+  deleteItem = (id) => {
+    const { contacts } = this.state;
+    const newContacts = contacts.filter(item => {
+      return item.id !== id;
+    });
+    this.setState({contacts: newContacts});
   }
 
   render() {
     // мапируем data из state
-    const {data} = this.state;
+    const {contacts} = this.state;
     return (
       <div>
-        {data.contacts.map((items)  => (
+        {contacts.map((items)  => (
           <Contacts 
             key={items.id}
             contactsData={items} 
-            click={this.changeState.bind(this, items.id)}
+            click={this.deleteItem.bind(this, items.id)}
           />
         ))}
       </div>
