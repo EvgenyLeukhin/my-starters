@@ -32,16 +32,16 @@ class ServerAPI extends Component {
   }
 }
 
-const getRequest = new ServerAPI();
+// const getRequest = new ServerAPI();
 
 // get Hero
-getRequest.getHero(10).then(body => { console.log(body.name); })
+// getRequest.getHero(10).then(body => { console.log(body.name); })
 
-// get All 
-getRequest.getAllHeros().then(body => {
-  body.forEach((element, index) => {
-    console.log(`${index}: ${element.name}`);  
-  });
-});
+// // get All 
+// getRequest.getAllHeros().then(body => {
+//   body.forEach((element, index) => {
+//     console.log(`${index}: ${element.name}`);  
+//   });
+// });
 
 export default ServerAPI;
