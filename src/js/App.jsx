@@ -8,14 +8,26 @@ const mapStateToProps = store => {
   return { counter: store.counter }
 }
 
+const mapDispatchToProps = dispatch => {
+  return {
+    plus:  () => dispatch({ type: 'PLUS' }),
+    minus: () => dispatch({ type: 'MINUS' }),
+  };
+};
+
 class App extends Component {
   render() {
     return (
-      <div className="app-wrapper">
-        {this.props.counter}
+      <div 
+        className="app-wrapper" 
+        style={{width: '100px', textAlign: 'center'}}
+      >
+        <p>{this.props.counter}</p>
+        <button onClick={this.props.plus}>+</button>
+        <button onClick={this.props.minus}>-</button>
       </div>
     );
   }
 }
 
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(App)
