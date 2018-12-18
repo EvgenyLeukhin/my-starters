@@ -8,7 +8,7 @@ const initialState = {
   counter: 0,
 };
 
-// types const
+// types const - for easy debuging
 const PLUS = 'PLUS';
 const MINUS = 'MINUS';
 
