@@ -1,0 +1,132 @@
+// common
+@import "common/fonts";
+@import "common/vars";
+@import "common/bootstrap-reboot";
+
+// layout
+@import "common/layout/header";
+@import "common/layout/footer";
+@import "common/contacts-block";
+@import "common/servicies-page";
+
+// izimodal
+@import "~izimodal/css/iziModal.css";
+
+// AOS
+@import "~aos/dist/aos.css";
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #111117;
+  color: $text-color;
+}
+
+.bold {
+  font-family: 'Druk Wide Medium', sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  // outline: 1px solid #ddd;
+  max-width: 1340px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// links
+a {
+  color: $text-color;
+  font-family: 'Manrope';
+  transition-duration: $transition-default-duration;
+
+  &:hover {
+    transition-property: all;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $accent-color;
+  }
+
+  &:active { text-decoration: none; }
+
+  &.btn {
+    display: flex;
+    width: 316px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid #00D1E6;
+    background-color: #111117;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    &:hover {
+      background-color: $text-color;
+      color: #000;
+    }
+
+    &:active { background-color: $accent-color; }
+  }
+}
+
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  li {
+    &:last-child {
+      a::after { display: none; }
+    }
+
+    a {
+      position: relative;
+      font-size: 14px;
+      line-height: 19px;
+      color: #9A9A9A;
+      margin-right: 25px;
+
+      &:hover { text-decoration: underline; }
+
+      &::after {
+        content: ">";
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 18px;
+        width: 18px;
+        font-size: 24px;
+        line-height: 18px;
+        position: absolute;
+        right: -22px;
+        top: 50%;
+        margin-top: -9px;
+      }
+
+      &.active {
+        cursor: default;
+        pointer-events: none;
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  a {
+    &.btn {
+      width: 100%;
+      height: 50px;
+    }
+  }
+}
