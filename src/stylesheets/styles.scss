@@ -1,0 +1,154 @@
+@import "base/fonts";
+@import "base/index";
+@import "layouts/index";
+@import "backgrounds/index";
+@import "stations/index";
+@import "triggers/index";
+
+body {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+
+  -webkit-text-size-adjust: 100%;
+  pointer-events: none;
+
+  &.init {
+    opacity: 1;
+  }
+
+  &.touch {
+    pointer-events: auto;
+  }
+}
+
+.photo {
+  p.card-info {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    left: em(15px);
+    right: em(15px);
+    color: rgba(48, 42, 30, 0.5);
+    font-size: em(11px, 12px);
+    line-height: em(13px, 12px);
+    padding-bottom: em(5px);
+
+    &.black {
+      padding-bottom: em(20px);
+      padding-right: em(5px);
+    }
+
+    &.top {
+      bottom: auto;
+      top: 0;
+    }
+  }
+
+  p.card-bottom-text {
+    font-family: 'English157BT', sans-serif;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgba(48, 42, 30, 1);
+    padding-top: em(2px);
+    padding-left: em(5px);
+    padding-right: em(5px);
+    padding-bottom: em(2px);
+    font-size: em(18px, 9px);
+    line-height: em(10px, 9px);
+  }
+}
+
+.triggers {
+  @include fade-in(2s);
+  display: none;
+}
+
+.stations {
+  @include fade-in(2s);
+  display: none;
+}
+
+.action {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  bottom: $rail-line;
+  height: calc(100% - #{$rail-line});
+}
+
+.scene {
+  position: absolute;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  & > div {
+    background-repeat: no-repeat;
+  }
+}
+
+.cards-scene {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: visible;
+}
+
+div.clouds {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: em(1200px);
+  margin-left: em(-600px);
+}
+
+.pre-init {
+  @include fade-in(2s);
+  visibility: hidden;
+
+  body.init & {
+    visibility: visible !important;
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .station {
+    // padding-left: 150vw;
+    // padding-right: 150vw;
+
+    &.station-10 {
+      // padding-left: 50vw;
+      // padding-right: 50vw;
+    }
+  }
+
+  .station.station-3,
+  .station.station-8 {
+    // padding-left: 300vw;
+    // padding-right: 300vw;
+  }
+
+  .train {
+    right: 120vw;
+  }
+}
+
+@media (max-height: $mobile-breakpoint) {
+  .train,
+  .action {
+    bottom: $rail-line-mobile-landscape;
+  }
+}

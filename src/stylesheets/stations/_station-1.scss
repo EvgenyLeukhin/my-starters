@@ -1,0 +1,272 @@
+.station-1 {
+  z-index: 10;
+  width: em(3000px);
+
+  .clouds {
+    background-image:
+      url(../images/bg/clouds/cloud1.png),
+      url(../images/bg/clouds/cloud3.png),
+      url(../images/bg/clouds/cloud2.png);
+    background-position: em(673px) em(208px), em(1872px) em(-25px), em(370px) em(-50px);
+    //42.11em 13.33em, 117.33em -1.67em, 225.11em -5.56em
+    background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+    transform: scaleX(-1);
+  }
+
+  .crowd {
+    position: absolute;
+    left: 50%;
+    transform: translate(-53%);
+    bottom: em(-10px);
+    z-index: 3;
+    width: em(1105px);
+    height: em(80px);
+    background-repeat: no-repeat;
+    background-image: url(../images/station-1/crowd3.svg);
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  .build {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%);
+    right: 0;
+    bottom: 0;
+    width: em(1190px);
+    height: em(440px);
+    // margin-left: em(-595px);
+    background-repeat: no-repeat;
+    background-image: url(../images/station-1/belorusskiy2-2.png);
+    background-size: contain;
+    background-position: 0 bottom;
+  }
+
+  .left {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    width: em(2620px);
+    height: em(330px);
+    background-position: left bottom, left bottom;
+    background-repeat: no-repeat;
+    background-size: em(130px) auto, contain;
+    background-image:
+      url(../images/bg/trees/tree1.svg),
+      url(../images/station-1/moscowBack.svg);
+  }
+
+  .right {
+    position: absolute;
+    z-index: 2;
+    right: em(207px);
+    bottom: 0;
+    width: em(1430px);
+    height: em(330px);
+    background-image:
+      url(../images/bg/trees/tree2.svg),
+      url(../images/bg/trees/tree1.svg),
+      url(../images/station-1/crowd1-light.svg);
+    background-position:
+      em(710px) bottom,
+      em(920px) bottom,
+      em(720px) bottom;
+    background-repeat: no-repeat;
+    background-size:
+      em(230px) auto,
+      em(120px) auto,
+      em(90px) auto;
+  }
+}
+
+.station-1-scene {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  overflow: visible;
+
+  .photo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: em(53px);
+    padding-left: em(20px);
+    padding-right: em(20px);
+    padding-bottom: em(27px);
+    color: #302a1e;
+  }
+
+  &-photo-1.photo {
+    z-index: 15;
+    width: em(250px);
+    height: em(170px);
+    margin-left: em(-142px);
+    margin-top: em(-165px);
+    background-image: url(../images/bg/card2.png);
+    background-size: 100% 100%;
+    padding-top: em(15px, 9px);
+    padding-left: em(25px, 9px);
+    padding-right: em(20px, 9px);
+    padding-bottom: em(20px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-2 {
+    z-index: 14;
+    width: em(350px);
+    height: em(240px);
+    margin-left: em(-185px);
+    margin-top: em(-10px);
+    background-image: url(../images/station-1/cards/02.png);
+    transform: rotate(5deg);
+  }
+
+  &-photo-3 {
+    z-index: 17;
+    width: em(350px);
+    height: em(240px);
+    margin-left: em(-152px);
+    margin-top: em(-185px);
+    background-image: url(../images/station-1/cards/03.png);
+    transform: rotate(8deg);
+  }
+
+  &-photo-4 {
+    z-index: 12;
+    width: em(310px);
+    height: em(180px);
+    margin-left: em(-142px);
+    margin-top: em(-172px);
+    background-image: url(../images/station-1/cards/01.png);
+    transform: rotate(-5deg);
+  }
+
+  &-photo-5.photo {
+    z-index: 16;
+    width: em(320px);
+    height: em(210px);
+    margin-left: em(-150px);
+    margin-top: em(28px);
+    background-image: url(../images/bg/card3.png);
+    padding-top: em(40px, 9px);
+    padding-left: em(35px, 9px);
+    padding-right: em(40px, 9px);
+    padding-bottom: em(40px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-6.photo {
+    z-index: 13;
+    width: em(270px);
+    height: em(195px);
+    margin-left: em(-110px);
+    margin-top: 0;
+    background-image: url(../images/bg/card2-2.png);
+    background-size: 100% 100%;
+    padding-top: em(20px, 9px);
+    padding-left: em(25px, 9px);
+    padding-right: em(25px, 9px);
+    padding-bottom: em(20px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-7 {
+    z-index: 18;
+    width: em(310px);
+    height: em(310px);
+    margin-left: em(-170px);
+    margin-top: em(-80px);
+    background-image: url(../images/station-1/cards/04.png);
+    transform: rotate(-7deg);
+
+    p.card-bottom-text {
+      top: 66%;
+    }
+  }
+
+  &-photo-8 {
+    z-index: 11;
+    width: em(320px);
+    height: em(212px);
+    margin-left: em(-150px);
+    margin-top: em(20px);
+    background-image: url(../images/station-1/cards/05.png);
+    transform: rotate(-3deg);
+  }
+
+  &-photo-9.photo {
+    z-index: 10;
+    width: em(263px);
+    height: em(212px);
+    margin-left: em(-130px);
+    margin-top: em(-153px);
+    background-image: url(../images/bg/card1.png);
+    padding-top: em(30px, 9px);
+    padding-left: em(25px, 9px);
+    padding-right: em(25px, 9px);
+    padding-bottom: em(30px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .station-1-scene {
+    &-photo-4 {
+      margin-left: em(-150px);
+    }
+
+    &-photo-6.photo {
+      margin-left: em(-130px);
+    }
+
+    &-photo-1.photo {
+      margin-left: em(-110px);
+    }
+
+    &-photo-2 {
+      margin-left: em(-170px);
+    }
+
+    &-photo-7 {
+      margin-left: em(-152px);
+    }
+  }
+}
+
+@media (max-height: 400px) {
+  .station-1-scene {
+    &-photo-1.photo {
+      margin-top: em(-125px);
+    }
+
+    &-photo-4,
+    &-photo-7 {
+      margin-top: em(-125px);
+    }
+  }
+}

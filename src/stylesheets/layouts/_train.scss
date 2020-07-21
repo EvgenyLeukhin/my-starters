@@ -1,0 +1,272 @@
+.train {
+  @include fade-in(2s);
+  display: none;
+  position: fixed;
+  bottom: $rail-line;
+  right: 50%;
+
+  width: em(1331px);
+  height: em(407px);
+
+  background: url(../images/bg/train/train.png) right top no-repeat;
+  background-size: em(927px) em(377px);
+
+  font-size: 50%;
+
+  z-index: 15 !important;
+
+  $train-front-wheel-left-offset: 640px;
+  $train-front-wheel-between-offset: 104px;
+  $train-back-wheel-left-offset: 78px;
+
+  &-smoke {
+    position: absolute;
+    z-index: 1;
+    width: em(1800px);
+    bottom: em(406px);
+    height: em(1100px);
+    top: em(-1100px);
+    right: em(66px);
+  }
+
+  &-coalcart {
+    position: absolute;
+    bottom: em(25px);
+    left: em(-2px);
+
+    width: em(518px);
+    height: em(238px);
+
+    background: url(../images/bg/train/coalcart.png) center center no-repeat;
+    background-size: em(518px) em(238px);
+  }
+
+  &-wheel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: em(100px);
+    height: em(100px);
+
+    background: url(../images/bg/train/wheel.svg) center center no-repeat;
+    background-size: contain;
+
+    &-1,
+    &-2,
+    &-3 {
+      bottom: em(-6px);
+
+      background-size: 90%;
+
+      filter: brightness(80%);
+    }
+
+    &-1 {
+      left: em($train-back-wheel-left-offset);
+    }
+
+    &-2 {
+      left: em($train-back-wheel-left-offset + 131px);
+    }
+
+    &-3 {
+      left: em($train-back-wheel-left-offset + 275px);
+    }
+
+    @for $i from 4 through 8 {
+      &-#{$i} {
+        left: em($train-front-wheel-left-offset + ($train-front-wheel-between-offset * ($i - 4)));
+      }
+    }
+  }
+
+  &-pusher {
+    position: absolute;
+    bottom: em(20px);
+
+    background-size: contain;
+
+    &-wheels-link {
+      bottom: em(58px);
+
+      width: em(103px);
+      height: em(21px);
+
+      background: url(../images/bg/train/wheels-link.svg) center center no-repeat;
+      background-size: contain;
+
+      @for $i from 1 through 4 {
+        &-#{$i} {
+          left: em($train-front-wheel-left-offset + 39px + ($train-front-wheel-between-offset * ($i - 1)));
+        }
+      }
+    }
+
+    &-main {
+      left: em($train-front-wheel-left-offset + 250px);
+      bottom: em(45px);
+
+      width: em(50px);
+      height: em(50px);
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: em(211px);
+        height: em(50px);
+
+        background: url(../images/bg/train/main-pusher.svg) center center no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &-small {
+      left: em($train-front-wheel-left-offset + 252px);
+      bottom: em(30px);
+
+      width: em(50px);
+      height: em(50px);
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: em(148px);
+        height: em(34px);
+
+        background: url(../images/bg/train/small-pusher.svg) center center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &-static-detail {
+    position: absolute;
+
+    &-top {
+      left: em($train-front-wheel-left-offset + 383px);
+      bottom: em(68px);
+
+      width: em(42px);
+      height: em(43px);
+
+      background: url(../images/bg/train/statictop.svg) center center no-repeat;
+      background-size: contain;
+    }
+
+    &-bar {
+      left: em($train-front-wheel-left-offset + 408px);
+      bottom: em(55px);
+
+      width: em(117px);
+      height: em(18px);
+
+      background: url(../images/bg/train/staticbar.svg) center center no-repeat;
+      background-size: contain;
+    }
+
+    &-bottom {
+      left: auto;
+      right: em(168px);
+      bottom: em(46px);
+
+      width: em(64px);
+      height: em(6px);
+
+      background: url(../images/bg/train/main-pusher-bar.svg) center center repeat-x;
+      background-size: auto 100%;
+    }
+  }
+
+  &-hummer {
+    position: absolute;
+    left: auto;
+    right: em(186px);
+    bottom: em(40px);
+
+    width: em(37px);
+    height: em(37px);
+
+    background: url(../images/bg/train/hummer.svg) center center no-repeat;
+    background-size: contain;
+  }
+
+  &-slev {
+    position: absolute;
+    left: auto;
+    right: em(290px);
+    bottom: em(70px);
+
+    width: em(18px);
+    height: em(44px);
+
+    background: url(../images/bg/train/slev.svg) center center no-repeat;
+    background-size: contain;
+
+    transform: rotate(-17deg);
+  }
+
+  &-rblev {
+    position: absolute;
+    left: auto;
+    right: em(175px);
+    bottom: em(36px);
+
+    width: em(64px);
+    height: em(110px);
+
+    background: url(../images/bg/train/rblev.svg) bottom center no-repeat;
+    background-size: contain;
+
+    transform: rotate(19deg);
+  }
+
+  &-rslev {
+    position: absolute;
+    left: auto;
+    right: em(142px);
+    bottom: em(21px);
+
+    width: em(80px);
+    height: em(35px);
+
+    background: url(../images/bg/train/rslev.svg) center left no-repeat;
+    background-size: contain;
+  }
+
+  &-topbar {
+    position: absolute;
+    left: auto;
+    right: em(315px);
+    bottom: em(100px);
+
+    width: em(37px);
+    height: em(20px);
+
+    background: url(../images/bg/train/topbar.svg) center left no-repeat;
+    background-size: contain;
+
+    transform: rotate(-116deg);
+  }
+
+  &-toplev {
+    position: absolute;
+    left: auto;
+    right: em(105px);
+    bottom: em(85px);
+
+    width: em(230px);
+    height: em(36px);
+
+    background: url(../images/bg/train/toplev.svg) center left no-repeat;
+    background-size: contain;
+  }
+}

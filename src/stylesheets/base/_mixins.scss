@@ -1,0 +1,26 @@
+@function em($target, $context: $font-size) {
+  @if ($target == 'em(0px)' or $target == 0) {
+    @return 0;
+  }
+
+  @return round(($target / $context * 1em) * 100) / 100;
+}
+
+@mixin fade-in($time: 2s) {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  animation: $time ease-in fade-in;
+}
+
+@mixin landscape-orientation {
+  @media screen and (orientation: landscape) and (min-device-width: 319px) and (max-device-width: 1000px) {
+    @content;
+  }
+}

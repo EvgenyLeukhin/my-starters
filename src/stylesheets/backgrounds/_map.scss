@@ -1,0 +1,29 @@
+// map
+.map {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: $rail-line;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center bottom;
+  background-image: url(../images/bg/basic/map.png);
+  background-size: cover;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(255, 155, 55, 0.25);
+  }
+}
+
+@media (max-height: 500px) {
+  .map {
+    height: $rail-line-mobile-landscape;
+  }
+}

@@ -1,0 +1,221 @@
+.station-9 {
+  z-index: 10;
+  width: em(3000px);
+
+  & > div {
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+  }
+
+  .clouds {
+    background-image:
+      url(../images/bg/clouds/cloud1.png),
+      url(../images/bg/clouds/cloud3.png),
+      url(../images/bg/clouds/cloud2.png);
+    background-position: em(100px) em(120px), em(750px) em(-15px), em(370px) em(-50px);
+    background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+    transform: scaleX(-1);
+  }
+
+  .reih {
+    z-index: 2;
+    width: em(1160px);
+    height: em(380px);
+    margin-left: em(-485px);
+    left: 50%;
+    bottom: 0;
+    background-size: contain;
+    background-position: 0 bottom;
+    background-image: url(../images/station-9/reih.svg);
+  }
+
+  .walls {
+    z-index: 1;
+
+    width: em(1750px);
+    height: em(130px);
+    margin-left: em(-840px);
+    left: 50%;
+    bottom: 0;
+    background-size: contain;
+    background-position: 0 bottom;
+    background-image: url(../images/station-9/reihback.svg);
+  }
+
+  .tanks {
+    z-index: 3;
+    width: em(1230px);
+    height: em(120px);
+    margin-left: em(-545px);
+    left: 50%;
+    bottom: 0;
+    background-size: contain;
+    background-position: 0 bottom;
+    background-image: url(../images/station-9/reihfront.svg);
+  }
+}
+
+.station-9-scene {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: visible;
+
+  .photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: em(53px);
+    padding-left: em(20px);
+    padding-right: em(20px);
+    padding-bottom: em(27px);
+    line-height: em(15px);
+  }
+
+  &-photo-1.photo {
+    width: em(245px);
+    height: em(190px);
+    margin-left: em(-140px);
+    margin-top: em(-195px);
+    z-index: 21;
+    background-image: url(../images/bg/card1.png);
+    padding-top: em(30px, 9px);
+    padding-left: em(30px, 9px);
+    padding-right: em(30px, 9px);
+    padding-bottom: em(20px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-2 {
+    width: em(320px);
+    height: em(240px);
+    margin-left: em(-180px);
+    margin-top: em(-10px);
+    background-image: url(../images/station-9/cards/01.png);
+    z-index: 20;
+  }
+
+  &-photo-3 {
+    width: em(360px);
+    height: em(240px);
+    margin-left: em(-170px);
+    margin-top: em(-135px);
+    z-index: 10;
+    background-image: url(../images/station-9/cards/02.png);
+  }
+
+  &-photo-4.photo {
+    width: em(260px);
+    height: em(180px);
+    margin-left: em(-130px);
+    margin-top: em(60px);
+    z-index: 10;
+    background-image: url(../images/bg/card2-2.png);
+    padding-top: em(25px, 9px);
+    padding-left: em(20px, 9px);
+    padding-right: em(10px, 9px);
+    padding-bottom: em(15px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-5.photo {
+    width: em(245px);
+    height: em(160px);
+    margin-left: em(-150px);
+    margin-top: em(-195px);
+    z-index: 11;
+    background-image: url(../images/bg/card2.png);
+    padding-top: em(40px, 9px);
+    padding-left: em(30px, 9px);
+    padding-right: em(20px, 9px);
+    padding-bottom: em(30px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-6 {
+    width: em(340px);
+    height: em(280px);
+    margin-left: em(-205px);
+    margin-top: -60px;
+    z-index: 8;
+    background-image: url(../images/station-9/cards/03.png);
+  }
+
+  &-photo-7 {
+    width: em(390px);
+    height: em(240px);
+    margin-left: em(-190px);
+    margin-top: em(-165px);
+    background-image: url(../images/station-9/cards/04.png);
+    z-index: 6;
+  }
+
+  &-photo-8.photo {
+    width: em(285px);
+    height: em(190px);
+    margin-left: em(-145px);
+    margin-top: em(50px);
+    z-index: 7;
+    padding-top: em(45px, 9px);
+    padding-left: em(30px, 9px);
+    padding-right: em(20px, 9px);
+    padding-bottom: em(20px, 9px);
+    background-image: url(../images/bg/card3.png);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .station-9-scene {
+    &-photo-5.photo {
+      margin-left: em(-120px);
+      margin-top: em(-130px);
+    }
+
+    &-photo-6 {
+      margin-left: em(-160px);
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-height: 400px) {
+  .station-9-scene {
+    &-photo-1.photo,
+    &-photo-5.photo {
+      margin-top: em(-150px);
+    }
+
+    &-photo-7.photo {
+      margin-top: em(-130px);
+    }
+
+    &-photo-4.photo,
+    &-photo-8.photo {
+      margin-top: em(20px);
+    }
+  }
+}

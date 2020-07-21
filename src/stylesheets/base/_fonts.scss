@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Verdana';
+  src:
+    local('Verdana'),
+    url('../fonts/Verdana/Verdana.woff2') format('woff2'),
+    url('../fonts/Verdana/Verdana.woff') format('woff'),
+    url('../fonts/Verdana/Verdana.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src:
+    local('Verdana Bold'),
+    url('../fonts/Verdana/Verdana-Bold.woff2') format('woff2'),
+    url('../fonts/Verdana/Verdana-Bold.woff') format('woff'),
+    url('../fonts/Verdana/Verdana-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'English157BT';
+  src:
+    local('English157BT'),
+    url('../fonts/English157BT/English157BT-Regular.woff') format('woff'),
+    url('../fonts/English157BT/English157BT-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

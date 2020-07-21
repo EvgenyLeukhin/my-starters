@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Поезд надежды</title>
+
+  <!-- meta -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent" />
+  <meta name="description" content="В канун 75-летия Великой Победы мы вспоминаем о роли работников железной дороги в Великой войне. О поездах несущих надежду. Их подвиги - наша вечная память" />
+  <meta name="keywords" content="Железная дорога, РЖД, Live, День Победы" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" />
+  <meta name="image"    content="https://raw.githubusercontent.com/EvgenyLeukhin/llorcs-DZR/gh-pages/assets/cover.png" />
+  <meta name="language" content="RU" />
+  <meta name="url" content="https://evgenyleukhin.github.io/llorcs-DZR" />
+  <meta name="identifier-URL" content="https://evgenyleukhin.github.io/llorcs-DZR" />
+
+  <!-- favs -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/96.png" />
+
+  <!-- open graph -->
+  <meta property="og:url"          content="https://evgenyleukhin.github.io/llorcs-DZR" />
+  <meta property="og:type"         content="website" />
+  <meta property="og:title"        content="Поезд надежды" />
+  <meta property="og:description"  content="В канун 75-летия Великой Победы мы вспоминаем о роли работников железной дороги в Великой войне. О поездах несущих надежду. Их подвиги - наша вечная память" />
+  <meta property="og:image"        content="https://raw.githubusercontent.com/EvgenyLeukhin/llorcs-DZR/gh-pages/assets/cover.png" />
+  <meta property="og:image:type"   content="image/png" />
+  <meta property="og:image:width"  content="1024" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:site_name"    content="Поезд надежды" />
+  <meta property="og:locale"       content="ru_RU"/>
+
+  <!-- google -->
+  <meta itemprop="name" content="Поезд надежды" />
+  <meta itemprop="description" content="Железная дорога - артерия жизненной силы. Во время Великой Отечественной войны это знал каждый. По железной дороге шли на фронт эшелоны с солдатами, техникой, снарядами, провизией. По ней же в тыл везли раненных, эвакуированных, перемещали с оккупированных территорий сотни тысяч людей. Железная дорога в пору Войны - символ надежды и веры каждого в скорую победу." />
+  <meta itemprop="image" content="https://raw.githubusercontent.com/EvgenyLeukhin/llorcs-DZR/gh-pages/assets/cover.png" />
+
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:src" content="https://raw.githubusercontent.com/EvgenyLeukhin/llorcs-DZR/gh-pages/assets/cover.png" />
+  <meta name="twitter:url" content="https://evgenyleukhin.github.io/llorcs-DZR" />
+  <meta name="twitter:site" content="https://evgenyleukhin.github.io/llorcs-DZR" />
+  <meta name="twitter:title" content="Поезд надежды" />
+  <meta name="twitter:description" content="В канун 75-летия Великой Победы мы вспоминаем о роли работников железной дороги в Великой войне. О поездах несущих надежду. Их подвиги - наша вечная память!" />
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]function(){(m[i].a=m[i].a[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(62337343, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/62337343" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+</head>
+<body>
+
+  <ul class="social-icons pre-init" style="visibility: hidden;">
+    <!-- vk  -->
+    <li class="vk">
+      <script type="text/javascript">
+        // берет текущий url из браузерной строки
+        document.write(VK.Share.button(false,{type: "link_noicon", text: "Сохранить"}));
+      </script>
+    </li>
+
+    <!-- facebook -->
+    <li class="fb">
+      <!-- url для шаринга -->
+      <div class="fb-share-button" data-href="https://evgenyleukhin.github.io/llorcs-DZR/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fevgenyleukhin.github.io%2Fllorcs-DZR%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Поделиться</a></div>
+    </li>
+
+    <!-- ok -->
+    <li class="oclass">
+      <a class="ok">
+        <div id="ok_shareWidget"></div>
+        <script>
+        !function (d, id, did, st, title, description, image) {
+          function init(){
+            OK.CONNECT.insertShareWidget(id,did,st, title, description, image);
+          }
+          if (!window.OK || !OK.CONNECT || !OK.CONNECT.insertShareWidget) {
+            var js = d.createElement("script");
+            js.src = "https://connect.ok.ru/connect.js";
+            js.onload = js.onreadystatechange = function () {
+            if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+              if (!this.executed) {
+                this.executed = true;
+                setTimeout(init, 0);
+              }
+            }};
+            d.documentElement.appendChild(js);
+          } else {
+            init();
+          }
+        }(document,"ok_shareWidget",document.URL,'{"sz":20,"st":"oval","nc":1,"nt":1,"bgclr":"ED8207","txclr":"FFFFFF"}',"Поезд надежды","В канун 75-летия Великой Победы мы вспоминаем о роли работников железной дороги в Великой войне. О поездах несущих надежду. Их подвиги - наша вечная память","https://raw.githubusercontent.com/EvgenyLeukhin/llorcs-DZR/start/src/assets/cover.png");
+        </script>
+      </a>
+    </li>
+
+    <!-- whatsapp -->
+    <li class="wh">
+      <a href="whatsapp://send?text=https://evgenyleukhin.github.io/llorcs-DZR" data-action="share/whatsapp/share" target="_blank"></a>
+    </li>
+
+    <!-- telegram -->
+    <li class="te">
+      <a href="tg://msg_url?url=https://evgenyleukhin.github.io/llorcs-DZR&text=В канун 75-летия Великой Победы мы вспоминаем о роли работников железной дороги в Великой войне. О поездах несущих надежду. Их подвиги - наша вечная память" target="_blank"></a></li>
+  </ul>
+
+  <div class="action pre-init" style="visibility: hidden;" id="action">
+    <!-- backgrounds -->
+    <div class="background-sky"    id="background-sky"></div>
+    <div class="background-rail"   id="background-rail"></div>
+
+    <!-- train -->
+    <div id="train" class="train" style="display: none;">
+      <div id="train-smoke" class="train-smoke"></div>
+      <div id="train-wheel-1" class="train-wheel train-wheel-1"></div>
+      <div id="train-wheel-2" class="train-wheel train-wheel-2"></div>
+      <div id="train-wheel-3" class="train-wheel train-wheel-3"></div>
+      <div id="train-wheel-4" class="train-wheel train-wheel-4"></div>
+      <div id="train-wheel-5" class="train-wheel train-wheel-5"></div>
+      <div id="train-wheel-6" class="train-wheel train-wheel-6"></div>
+      <div id="train-wheel-7" class="train-wheel train-wheel-7"></div>
+      <div id="train-wheel-8" class="train-wheel train-wheel-8"></div>
+      <div id="train-static-detail-bottom" class="train-static-detail train-static-detail-bottom"></div>
+      <div id="train-pusher-wheels-link-1" class="train-pusher train-pusher-wheels-link train-pusher-wheels-link-1"></div>
+      <div id="train-pusher-wheels-link-2" class="train-pusher train-pusher-wheels-link train-pusher-wheels-link-2"></div>
+      <div id="train-pusher-wheels-link-3" class="train-pusher train-pusher-wheels-link train-pusher-wheels-link-3"></div>
+      <div id="train-pusher-wheels-link-4" class="train-pusher train-pusher-wheels-link train-pusher-wheels-link-4"></div>
+      <div id="train-static-detail-bar" class="train-static-detail train-static-detail-bar"></div>
+      <div id="train-toplev" class="train-toplev"></div>
+      <div id="train-hummer" class="train-hummer"></div>
+      <div id="train-slev" class="train-slev"></div>
+      <div id="train-rblev" class="train-rblev"></div>
+      <div id="train-rslev" class="train-rslev"></div>
+      <div id="train-topbar" class="train-topbar"></div>
+      <div id="train-pusher-main" class="train-pusher train-pusher-main"></div>
+      <div id="train-pusher-small" class="train-pusher train-pusher-small"></div>
+      <div id="train-static-detail-top" class="train-static-detail train-static-detail-top"></div>
+      <div class="train-coalcart"></div>
+    </div>
+
+    <!-- start -->
+    <div id="start-scene" class="scene start-scene">
+      <div
+        class="photo start-scene-photo-1 preload-image--fast"
+        data-preload-image="./assets/start-screen/01.jpg"
+      >
+        <h2>Поезд надежды</h2>
+        <p>Железная дорога во время Великой Отечественной войны — символ надежды и веры каждого в скорую победу. По железной дороге шли на фронт эшелоны с солдатами, техникой, боеприпасами, провизией. По ней же в тыл везли раненых, эвакуированных, перемещали с оккупированных территорий сотни тысяч людей и даже целые предприятия.</p>
+        <br>
+        <p>Все 1&nbsp;418 дней войны тысячи железнодорожников трудились и сражались, приближая победу. Каждый из них, от закалённого боями командира бронепоезда до девчонки-стрелочницы, работал на общее дело, отдавая все силы. В канун 75-летия Великой Победы мы вспоминаем о роли работников железной дороги в Великой войне. Их подвиги не должны быть забыты. Их подвиги — наша вечная память.</p>
+        <div class="loading-progress" id="loading-progress">
+          <div class="loading-progress-number" id="loading-progress-number">0%</div>
+          <div class="loading-progress-bar-wrapper">
+            <div class="loading-progress-bar" id="loading-progress-bar"></div>
+          </div>
+        </div>
+        <a href="#station-1-trigger" class="arrow-down" id="arrow-down-btn">
+          Начать
+        </a>
+      </div>
+      <div
+        class="photo start-scene-photo-2"
+        data-preload-image="./assets/start-screen/02.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-3"
+        data-preload-image="./assets/start-screen/03.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-4"
+        data-preload-image="./assets/start-screen/04.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-5"
+        data-preload-image="./assets/start-screen/05.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-6"
+        data-preload-image="./assets/start-screen/06.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-7"
+        data-preload-image="./assets/start-screen/07.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-8"
+        data-preload-image="./assets/start-screen/08.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-9"
+        data-preload-image="./assets/start-screen/09.png"
+      ></div>
+      <div
+        class="photo start-scene-photo-10"
+        data-preload-image="./assets/start-screen/10.png"
+      ></div>
+    </div>
+
+    <div class="stations" id="stations" style="display: none;">
+      <!-- station-1 -->
+      <div id="road-1" class="road-1  road">
+        <div class="bg-trees"></div>
+      </div>
+      <div id="station-1" class="scene  station  station-1">
+        <div class="left"></div>
+        <div class="build"></div>
+        <div class="right"></div>
+        <div class="crowd"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-1-scene" class="station-1-scene">
+        <div class="photo station-1-scene-photo-1">
+          <p>Отсюда — сперва на приближающиеся к столице фронты, а затем всё дальше и дальше на запад — будут уходить эшелоны с войсками. Сюда же в мае 45-го будут прибывать осыпаемые цветами поезда Победы.</p>
+          <p class="card-info">Фото: Аркадий Шайхет <span>rosphoto.com</span></p>
+        </div>
+        <div class="photo station-1-scene-photo-2"></div>
+
+        <div class="photo station-1-scene-photo-3"></div>
+        <div class="photo station-1-scene-photo-5">
+          <p>Переоборудованный товарный вагон, он же теплушка, — главный войсковой транспорт военных лет. Вместимость — 40 человек. Только за вторую половину 41-го по железной дороге пройдёт более полутора миллионов таких вагонов. С войсками, беженцами, ранеными.</p>
+          <p class="card-info">Фото: Марк Марков-Гринбершг <span>rosphoto.com</span></p>
+        </div>
+        <div class="photo station-1-scene-photo-4">
+        </div>
+        <div class="photo station-1-scene-photo-6">
+          <p>Звучит «Священная война». Звучит впервые. Играют и поют артисты армейского Ансамбля песни и пляски СССР. Первая строка — «Вставай, страна огромная!» — станет одним из девизов Великой Отечественной, а Белорусский вокзал — главным вокзалом войны.</p>
+          <p class="card-info">Фото: В. Кондратьева <span>slavmuseum.ru</span></p>
+        </div>
+        <div class="photo station-1-scene-photo-7">
+          <p class="card-bottom-text">
+            Вот так выглядела теплушка изнутри. Двух- или трёхъярусные нары, печка-буржуйка, стены, утеплённые деревянными щитами и двойным войлоком.
+          </p>
+          <p class="card-info" style="padding-right: 10px;">Фото: <span>74.ru</span></p>
+        </div>
+        <div class="photo station-1-scene-photo-8"></div>
+        <div class="photo station-1-scene-photo-9">
+          <p>Четвёртый день войны. На Белорусском вокзале грузятся в эшелоны уходящие на фронт войска. Шум, толчея, объятия, слёзы прощания. Внезапно над толпой проносятся торжественные и грозные звуки марша.</p>
+          <p class="card-info top">Фото: Коллекция Ермолаева Н.А. <span>vparavoz.com</span></p>
+        </div>
+      </div>
+
+      <!-- station-2 -->
+      <div id="road-2" class="road-2  road"><div class="bg-trees"></div></div>
+      <div id="station-2" class="scene  station  station-2">
+        <div class="sanitary-train">
+          <div class="sanitary-train__layer  woman3"></div>
+          <div class="sanitary-train__layer  cariage1"></div>
+          <div class="sanitary-train__layer  cariage2"></div>
+          <div class="sanitary-train__layer  woman2"></div>
+          <div class="sanitary-train__layer  man2"></div>
+          <div class="sanitary-train__layer  man2-2"></div>
+          <div class="sanitary-train__layer  man3"></div>
+          <div class="sanitary-train__layer  man4"></div>
+          <div class="sanitary-train__layer  crowd"></div>
+        </div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-2-scene" class="station-2-scene">
+        <div class="photo station-2-scene-photo-1"></div>
+        <div class="photo station-2-scene-photo-2"></div>
+        <div class="photo station-2-scene-photo-3">
+          <p>
+            Раненых нужно кормить, и на крышах поезда появляются грядки, а под вагонами селят кур. Начальство сперва ругалось на «колхоз», но, увидев цифры спасённых, отступило.
+          </p>
+          <p class="card-info">Фото: <span>nnov.kp.ru</span></p>
+        </div>
+        <div class="photo station-2-scene-photo-4">
+          <p>В поезде появляются парикмахерская и баня. Библиотека и вагон лечебной физкультуры. Белоснежное бельё и стерилизационный аппарат, сконструированный и собранный интендантом Иваном Порохиным.</p>
+          <p class="card-info">Фото: <span>nnov.kp.ru</span></p>
+        </div>
+        <div class="photo station-2-scene-photo-5"></div>
+        <div class="photo station-2-scene-photo-6">
+          <p>На любой станции чистому и опрятному 312-му — первый путь и самое быстрое обслуживание. Поезд спасения, поезд-образец. Десятки рейсов. 200 тысяч пройденных километров. 25 тысяч перевезённых раненых. </p>
+          <p class="card-info black">Фото: <span>smolbattle.ru</span></p>
+        </div>
+        <div class="photo station-2-scene-photo-7">
+          <p class="card-bottom-text">
+            Писательница Вера Панова опубликовала о СП-312 книгу «Спутники». О поезде сняты фильмы «Поезд милосердия» и «На всю оставшуюся жизнь». Сейчас один из вагонов состава превращён в музей. Находится он на родине поезда, в Вологде.
+          </p>
+          <p class="card-info" style="padding-bottom: 10px;">Фото: <span>cultinfo.ru</span></p>
+        </div>
+        <div class="photo station-2-scene-photo-8">
+          <p>Санитарный № 312 в пути. Это первый рейс поезда, ставшего легендой военной медицины. Вскоре вагоны заполнят раненые. Глядя на них, начальник состава Николай Даничев поймёт, что сделает всё, чтобы довезти до места живыми.</p>
+          <p class="card-info">Фото: <span>topwar.ru</span></p>
+        </div>
+        <div class="photo station-2-scene-photo-9"></div>
+      </div>
+
+      <!-- station-3 -->
+      <div id="road-3" class="road-3  road"><div class="bg-trees"></div></div>
+      <div id="station-3" class="scene  station  station-3">
+        <div class="eshelons1"></div>
+        <div class="eshelons2"></div>
+        <div class="crowd1"></div>
+        <div class="crowd2"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-3-scene" class="station-3-scene">
+        <div class="photo station-3-scene-photo-1">
+          <p>Октябрь 41-го, самые трудные дни войны. Танковые колонны вермахта рвутся к Москве. Красная армия измотана и обескровлена в тяжёлых боях. Свежие силы есть, но они далеко — в Сибири и на Дальнем Востоке.</p>
+          <p class="card-info top">Фото: <span>waralbum.ru</span></p>
+        </div>
+        <div class="photo station-3-scene-photo-2">
+          <p>Но приказ — это приказ. И железнодорожники начинают операцию. Эшелоны идут на запад. При полной светомаскировке, без огней, без сигналов, без остановок. По 800 километров в сутки.</p>
+          <p class="card-info">Фото: <span>this.was.ru</span></p>
+        </div>
+        <div class="photo station-3-scene-photo-3"></div>
+        <div class="photo station-3-scene-photo-4"></div>
+        <div class="photo station-3-scene-photo-5">
+          <p>12 октября командование принимает решение о переброске сибирских дивизий под Москву. Задача сложнейшая: Транссиб забит поездами, идущими на восток. В них беженцы и оборудование эвакуированных предприятий.</p>
+          <p class="card-info black">Фото: <span>gkaf.nsu.ru</span></p>
+        </div>
+        <div class="photo station-3-scene-photo-6"></div>
+        <div class="photo station-3-scene-photo-7"></div>
+        <div class="photo station-3-scene-photo-8">
+          <p>12 стрелковых, пять танковых и одна моторизованная дивизия были доставлены на фронт за три недели. Полк за полком, дивизия за дивизией. Прямо с колёс — в бой. Такого немцы не ожидали. Фашистское наступление остановилось, а затем обратилось вспять.</p>
+          <p class="card-info">Фото: <span>wikimedia.org</span></p>
+        </div>
+      </div>
+
+      <!-- station-4 -->
+      <div id="road-4" class="road-4  road"><div class="bg-trees"></div></div>
+      <div id="station-4" class="scene  station  station-4">
+        <div class="heavy-train"></div>
+        <div class="bridge"></div>
+        <div class="crowd"></div>
+        <div class="death-tree"></div>
+        <div class="tree1"></div>
+        <div class="tree2"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-4-scene" class="station-4-scene">
+        <div class="photo station-4-scene-photo-1">
+          <p>Дмитров — 65 километров до Москвы. Здесь переправа через канал Москва — Волга и удобный плацдарм для атаки на столицу. Сюда рвётся враг. Командир бронепоезда № 73, капитан Малышев, получает приказ любой ценой не пустить немцев в город.</p>
+          <p class="card-info">Фото: <span>waralbum.ru</span></p>
+        </div>
+        <div class="photo station-4-scene-photo-2"></div>
+        <div class="photo station-4-scene-photo-3"></div>
+        <div class="photo station-4-scene-photo-4">
+          <p>Бронепоезд — железнодорожная крепость на колёсах. Покрытый бронёй паровоз, две платформы с четырьмя 76-миллиметровыми пушками в стальных башнях, пулемёты. В умелых руках — грозная сила.</p>
+          <p class="card-info black">Фото: архив ОЖД <span>irk.kp.ru</span></p>
+        </div>
+        <div class="photo station-4-scene-photo-5">
+          <p>Едва 73-й вышел на Дмитровский переезд, по броне застучали пули. Враг бросил навстречу все силы: танки, пехоту, артиллерию. Бронепоезд вступил в бой.</p>
+          <p class="card-info">Фото: <span>waralbum.ru</span></p>
+        </div>
+        <div class="photo station-4-scene-photo-6"></div>
+        <div class="photo station-4-scene-photo-7"></div>
+        <div class="photo station-4-scene-photo-8">
+          <p>Вскоре из строя вышел паровоз. Запасной нашёлся на станции Дмитров, им управлял машинист Доронин. Заместитель командира 73-го Знаменский показал приказ — передать машину. Но Доронин, понимая важность боя, повёл паровоз сам.</p>
+          <p class="card-info">Фото: <span>dmkray.ru</span></p>
+        </div>
+        <div class="photo station-4-scene-photo-9">
+          <p>Бой продолжался семь часов. На поле битвы враг оставил 12 танков, 24 бронетранспортёра, свыше 700 солдат. Атака на Дмитров была отбита. Наши потери — семеро убитых, один раненый, трое пропавших без вести.</p>
+          <p class="card-info">Фото: <span>slrclarity.ru</span></p>
+        </div>
+        <div class="photo station-4-scene-photo-10"></div>
+      </div>
+
+      <!-- station-5 -->
+      <div id="road-5" class="road-5  road"><div class="bg-trees"></div></div>
+      <div id="station-5" class="scene  station  station-5">
+        <div class="wires"></div>
+        <div class="workers"></div>
+        <div class="death-tree"></div>
+        <div class="tree"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-5-scene" class="station-5-scene">
+        <div class="photo station-5-scene-photo-1">
+          <p>Зима 42-го. Враг разгромлен под Москвой, но положение остаётся тяжёлым. Противник перекрыл железнодорожную ветку на Курск и Харьков. Государственный комитет обороны принимает решение о строительстве дороги по восточному берегу Волги.</p>
+          <p class="card-info">Фото: <span>histrf.ru</span></p>
+        </div>
+        <div class="photo station-5-scene-photo-2"></div>
+        <div class="photo station-5-scene-photo-3"></div>
+        <div class="photo station-5-scene-photo-4">
+          <p>За девять месяцев требовалось разработать проект и проложить 978 километров путей. Ни материальных, ни человеческих ресурсов для этого не было. Но их надо было найти, и их нашли.</p>
+          <p class="card-info">Фото: <span>историческая-самара.рф</span></p>
+        </div>
+        <div class="photo station-5-scene-photo-5">
+          <p>В марте началось строительство. На шпалы и рельсы разобрали несколько участков дороги в Восточной Сибири. За несколько тысяч километров от Волги. Дороги забиты эшелонами. Но железнодорожники доставили материалы вовремя.</p>
+          <p class="card-info black">Фото: <span>culture.ru</span></p>
+        </div>
+        <div class="photo station-5-scene-photo-6"></div>
+        <div class="photo station-5-scene-photo-7"></div>
+        <div class="photo station-5-scene-photo-8">
+          <p>Работали по 14 часов в сутки. Практически без техники. Только лопаты, кирки, тачки. Жили в палатках, не хватало еды и медикаментов.</p>
+          <p class="card-info" style="padding-bottom: 5px;">Фото: <span>gudok.ru</span></p>
+        </div>
+        <div class="photo station-5-scene-photo-9">
+          <p>Но к сентябрю по дороге пошли поезда. Так быстро дороги ещё не строили. Именно по Волжской рокаде шли подкрепления и техника на Сталинградскую битву. Во многом именно благодаря этой дороге Сталинград не был захвачен фашистами.</p>
+          <p class="card-info" style="padding-bottom: 15px;">Фото: <span>smolbattle.ru</span></p>
+        </div>
+        <div class="photo station-5-scene-photo-10"></div>
+      </div>
+
+      <!-- station-6 -->
+      <div id="road-6" class="road-6  road"><div class="bg-trees"></div></div>
+      <div id="station-6" class="scene  station  station-6">
+        <div class="construction"></div>
+        <div class="workers"></div>
+        <div class="sands-and-tree"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-6-scene" class="station-6-scene">
+        <div class="photo station-6-scene-photo-1">
+          <p>12 января 1943 года. Операция «Искра». После ожесточённых боёв войска Ленинградского и Волховского фронтов встречаются на левом берегу Невы. Блокада Ленинграда прорвана!</p>
+          <p class="card-info">Фото: <span>regnum.ru</span></p>
+        </div>
+        <div class="photo station-6-scene-photo-2"></div>
+        <div class="photo station-6-scene-photo-3"></div>
+        <div class="photo station-6-scene-photo-4">
+          <p>Но освобождена лишь тонкая полоска голой болотистой земли. Для поставок продовольствия в измождённый город нужна железная дорога. 33 километра путей. Срок выполнения — 20 дней.</p>
+          <p class="card-info" style="padding-bottom: 10px;">Фото: <span>blokada.otrok.ru</span></p>
+        </div>
+        <div class="photo station-6-scene-photo-5">
+          <p>Болотистая земля напичкана минами. В четырёх километрах — немецкие артиллерийские позиции. Шпалы и рельсы кладут прямо в снег. Землю для насыпи носят в мешках. Днём и ночью. Под непрекращающимся огнём противника.</p>
+          <p class="card-info black">Фото: <span>regnum.ru</span></p>
+        </div>
+        <div class="photo station-6-scene-photo-6"></div>
+        <div class="photo station-6-scene-photo-7"></div>
+        <div class="photo station-6-scene-photo-8">
+          <p>Мост через Неву — сложнейший участок. За 12 суток надо забить 2650 свай, возвести 1300 метров моста. Норма копровщика мирного времени — 20 свай в сутки. Этой зимой под артиллерийским огнём вбивали по 85!</p>
+          <p class="card-info" style="padding-bottom: 10px;">Фото: <span>mirtesen.ru</span></p>
+        </div>
+        <div class="photo station-6-scene-photo-9">
+          <p>Дорогу сдали через 17 дней. 7 февраля в Ленинград сквозь фашистский огонь прорывается израненный снарядами состав. Первый за 17 месяцев. Теперь поезда будут приходить регулярно. К 22 февраля пайка хлеба увеличивается до 700 граммов. Голод отступил.</p>
+          <p class="card-info top" style="text-align: left; padding-top: 5px; padding-left: 12px;">Фото: <span>milcult.ru</span></p>
+        </div>
+        <div class="photo station-6-scene-photo-10"></div>
+      </div>
+
+      <!-- station-7 -->
+      <div id="road-7" class="road-7 road"><div class="bg-trees"></div></div>
+      <div id="station-7" class="scene  station  station-7">
+        <div class="work-train"></div>
+        <div class="tree1"></div>
+        <div class="tree2"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-7-scene" class="station-7-scene">
+        <div class="photo station-7-scene-photo-1">
+          <p>В феврале 43-го в только что освобождённый Сталинград прибывает состав с углём. В город приходит много грузов, но этот особенный. Уголь куплен машинистом Николаем Луниным на полученную им Сталинскую премию.</p>
+          <p class="card-info">Фото: <span>sibmemorial.ru</span></p>
+        </div>
+        <div class="photo station-7-scene-photo-2"></div>
+        <div class="photo station-7-scene-photo-3"></div>
+        <div class="photo station-7-scene-photo-4">
+          <p>Премию Лунин получил за разработку нового метода обслуживания паровозов. Идея следующая: паровозная бригада принимает участие в ремонте, осваивает специальность слесаря и может сама устранять мелкие поломки, не заходя в депо.</p>
+          <p class="card-info" style="padding-bottom: 10px;">Фото: <span>nsknews.info</span></p>
+        </div>
+        <div class="photo station-7-scene-photo-5">
+          <p>Идея породила движение, названное Лунинским. Его девиз: «Максимальный пробег без ремонта». Примеру Лунина последовало более 7000 паровозных бригад. Пробег паровозов между ремонтами увеличился в полтора раза. Экономились миллионы рублей, но что важнее – время. Фронт не мог ждать.</p>
+          <p class="card-info black">Фото: <span>history.niv.ru</span></p>
+        </div>
+        <div class="photo station-7-scene-photo-6"></div>
+        <div class="photo station-7-scene-photo-7"></div>
+        <div class="photo station-7-scene-photo-8">
+          <p>Ремонт силами паровозной бригады не единственная инициатива Лунина. В декабре 41-го он приводил в Москву состав, груженный 5 тысячами тонн угля. До этого максимальной нагрузкой считалось 1250 тонн. Вскоре сверхтяжёлые составы идут по всему Союзу.</p>
+          <p class="card-info">Фото: <span>trasportpedia.org</span></p>
+        </div>
+        <div class="photo station-7-scene-photo-9">
+          <p>За годы войны Лунин и его бригада перевезли 854 тысячи тонн угля и 585 тысяч тонн других грузов. Правительство официально признало паровоз Лунина лучшим паровозом Советского Союза.</p>
+          <p class="card-info">Фото: <span>VN.ru</span></p>
+        </div>
+        <div class="photo station-7-scene-photo-10"></div>
+      </div>
+
+      <!-- station-8 -->
+      <div id="road-8" class="road-8 road"><div class="bg-trees"></div></div>
+      <div id="station-8" class="scene  station  station-8">
+        <div class="heavy-train"></div>
+        <div class="crowd"></div>
+        <div class="tree"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-8-scene" class="station-8-scene">
+        <div class="photo station-8-scene-photo-1">
+          <p>44-й. Бои на Украине. Под Ковелем наступающие советские войска сталкиваются со странным явлением. Каждый день в одно и то же время и из одной и той же точки по позициям бьёт вражеская артиллерия. Но разведка докладывает: батареи в этом районе нет.</p>
+          <p class="card-info">Фото: <span>history-doc.ru</span></p>
+        </div>
+        <div class="photo station-8-scene-photo-2"></div>
+        <div class="photo station-8-scene-photo-3"></div>
+        <div class="photo station-8-scene-photo-4">
+          <p>Проанализировав факты, командир Михаил Кравчина понимает: обстрелы совершает вражеский бронепоезд. Нам есть чем ответить, в распоряжении командования «Илья Муромец»&nbsp;— бронепоезд, уже показавший себя в боях.</p>
+          <p class="card-info">Фото: <span>russianphoto.ru</span></p>
+        </div>
+        <div class="photo station-8-scene-photo-5">
+          <p>В назначенный час замаскированный зеленью «Муромец» отправился на огневой рубеж. Залп всех орудий — и с фашистским поездом покончено. Вместо крепости на колёсах — груда обломков с едва различимой надписью «Адольф Гитлер».</p>
+          <p class="card-info">Фото: <span>turzvezda.ru</span></p>
+        </div>
+        <div class="photo station-8-scene-photo-6"></div>
+        <div class="photo station-8-scene-photo-7"></div>
+        <div class="photo station-8-scene-photo-8">
+          <p>Победивший «Гитлера» богатырь закончил войну в 50 километрах от Берлина. Совершил за войну 150 боевых выездов, уничтожив десятки огневых точек. Когда 17 июля 1945 года в Потсдаме открылась конференция стран-победительниц, охранять её доверили стальному витязю.</p>
+          <p class="card-info black">Фото: <span>history1.ru</span></p>
+        </div>
+      </div>
+
+      <!-- station-9 -->
+      <div id="road-9" class="road-9 road"><div class="bg-trees"></div></div>
+      <div id="station-9" class="scene  station  station-9">
+        <div class="reih"></div>
+        <div class="walls"></div>
+        <div class="tanks"></div>
+        <div class="clouds"></div>
+      </div>
+      <div id="station-9-scene" class="station-9-scene">
+        <div class="photo station-9-scene-photo-1">
+          <p>25 апреля 1945-го. Победа близка! В этот день на Эльбе встретились советские солдаты и войска западных союзников. А в Берлин прибыл первый советский поезд.</p>
+          <p class="card-info black">Фото: <span>ggsb.ru</span></p>
+        </div>
+        <div class="photo station-9-scene-photo-2"></div>
+        <div class="photo station-9-scene-photo-3"></div>
+        <div class="photo station-9-scene-photo-4">
+          <p>Отступая, немцы разрушали железные дороги. Их приходилось практически строить заново. Но вот последний участок на Берлин восстановлен. Машинист Андрей Лесников драит свой паровоз до блеска. И идёт на последний рывок.</p>
+          <p class="card-info">Фото: <span>nozdr.ru</span></p>
+        </div>
+        <div class="photo station-9-scene-photo-5">
+          <p>На мосту через Одер состав попадает под обстрел. Но паровоз цел, и, врываясь в Берлин, Лесников даёт три торжественных долгих гудка.</p>
+          <p class="card-info">Фото: <span>etoretro.ru</span></p>
+        </div>
+        <div class="photo station-9-scene-photo-6"></div>
+        <div class="photo station-9-scene-photo-7"></div>
+        <div class="photo station-9-scene-photo-8">
+          <p>В тот же день телеграмма в штаб фронта. «Сегодня открыто движение поездов Берлин — Лихтенберг». И короткая резолюция Жукова: «Молодцы!» </p>
+          <p class="card-info">Фото: <span>periskop.ru</span></p>
+        </div>
+      </div>
+
+      <!-- station-10 -->
+      <div id="road-10" class="road-10  road"><div class="bg-trees"></div></div>
+      <div id="station-10" class="scene  station  station-10">
+        <div class="left"></div>
+        <div class="build"></div>
+        <div class="right"></div>
+        <div class="crowd"></div>
+        <div class="clouds"></div>
+        <div class="fireworks"></div>
+      </div>
+      <div id="station-10-scene" class="station-10-scene">
+        <div class="photo station-10-scene-photo-1">
+          <p>И снова Белорусский вокзал. Но сегодня он усыпан цветами. Победа! Возвращаются с фронта солдаты. Крики радости, слёзы счастья, объятия.</p>
+          <p class="card-info black">Фото: <span>russianphoto.ru</span></p>
+        </div>
+        <div class="photo station-10-scene-photo-2"></div>
+        <div class="photo station-10-scene-photo-3"></div>
+        <div class="photo station-10-scene-photo-4">
+          <p>В каждые из 1418 дней и ночей Великой войны железнодорожники отдавали все силы фронту. Перевезено 20 миллионов вагонов с солдатами, снарядами, боевой техникой, продовольствием. Если выстроить их в цепочку, она четыре раза обогнёт земной шар.</p>
+          <p class="card-info">Фото: <span>1723.ru</span></p>
+        </div>
+        <div class="photo station-10-scene-photo-5">
+          <p>Восстановлено 120 тысяч километров путей. Построено 13 тысяч малых и три тысячи больших мостов.</p>
+          <p class="card-info top" style="padding-top: 5px;">Фото: <span>pastvu.com</span></p>
+        </div>
+        <div class="photo station-10-scene-photo-6"></div>
+        <div class="photo station-10-scene-photo-7">
+          <p class="card-bottom-text">
+            Солдаты и офицеры железнодорожных войск, машинисты и стрелочники, седоусые ветераны и вчерашние студенты, медсёстры санитарных поездов и инженеры-путейцы — каждый из них внёс свой вклад в Победу. Слава железнодорожникам! Их подвиг не будет забыт.
+          </p>
+          <p class="card-info">Фото: <span>fishki.net</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="map pre-init" style="visibility: hidden;">
+    <ul id="menu" class="menu">
+      <li class="menu-item" id="menu-station-1">
+        <a href="#station-1-trigger">26&nbsp;июня <br>1941г</a>
+        <a href="#station-1-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-2">
+        <a href="#station-2-trigger">27&nbsp;июня <br>1941г</a>
+        <a href="#station-2-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-3">
+        <a href="#station-3-trigger">12&nbsp;октября <br>1941г</a>
+        <a href="#station-3-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-4">
+        <a href="#station-4-trigger">23&nbsp;ноября <br>1941г</a>
+        <a href="#station-4-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-5">
+        <a href="#station-5-trigger">23&nbsp;января <br>1942г</a>
+        <a href="#station-5-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-6">
+        <a href="#station-6-trigger">Январь <br>1943г</a>
+        <a href="#station-6-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-7">
+        <a href="#station-7-trigger">Февраль <br>1943г</a>
+        <a href="#station-7-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-8">
+        <a href="#station-8-trigger">4&nbsp;июня <br>1944г</a>
+        <a href="#station-8-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-9">
+        <a href="#station-9-trigger">25&nbsp;апреля <br>1945г</a>
+        <a href="#station-9-trigger"></a>
+      </li>
+
+      <li class="menu-item" id="menu-station-10">
+        <a href="#station-10-trigger">9&nbsp;мая <br>1945г</a>
+        <a href="#station-10-trigger"></a>
+      </li>
+    </ul>
+  </nav>
+
+  <footer class="footer pre-init" id="footer" style="visibility: hidden;">
+    <a href="https://life.ru/" class="life-logo" target="_blank">
+      <img src="images/bg/basic/life-logo.svg" alt="life-logo.svg" />
+    </a>
+    <a href="https://www.rzd.ru/" class="rzd-logo" target="_blank">
+      <img src="images/bg/basic/rzd-logo.svg" alt="rzd-logo.svg" />
+    </a>
+  </footer>
+
+  <!-- triggers -->
+  <div class="triggers" id="triggers" style="display: none;">
+    <!-- start -->
+    <div id="start-scene-trigger" style="height: 1000px; margin-top: 50vh;"></div>
+    <div id="train-start-trigger" style="height: 500px;"></div>
+
+    <!-- stations -->
+    <div id="road-trigger-1"      class="road-trigger"></div>
+    <div id="station-1-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-2"      class="road-trigger"></div>
+    <div id="station-2-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-3"      class="road-trigger"></div>
+    <div id="station-3-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-4"      class="road-trigger"></div>
+    <div id="station-4-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-5"      class="road-trigger"></div>
+    <div id="station-5-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-6"      class="road-trigger"></div>
+    <div id="station-6-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-7"      class="road-trigger"></div>
+    <div id="station-7-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-8"      class="road-trigger"></div>
+    <div id="station-8-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-9"      class="road-trigger"></div>
+    <div id="station-9-trigger"   class="station-trigger"></div>
+    <div id="road-trigger-10"     class="road-trigger"></div>
+    <div id="station-10-trigger"  class="station-trigger"></div>
+  </div>
+
+  <div id="scroll-alert" class="scroll-alert" style="display: none;">
+    <b>Начните скроллить для&nbsp;продолжения</b>
+  </div>
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+  <script src="./assets/lottie.js"></script>
+  <script>
+    const animation = bodymovin.loadAnimation({
+      container: document.getElementById('train-smoke'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: './assets/smoke-anim.json',
+      rendererSettings: {
+        hideOnTransparent: 0,
+  	    preserveAspectRatio: 'none'
+      }
+    })
+  </script>
+</body>
+</html>

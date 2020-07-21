@@ -1,7 +1,36 @@
+## Project
+dist/*
+src__old/*
+
+## Node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+npm-debug.log
 node_modules
-public
+
+## Sass
+.sass-cache
+
+## OS X
 .DS_Store
-.cache/
-.vscode/
-.idea
-src/_design
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

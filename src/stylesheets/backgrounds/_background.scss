@@ -1,0 +1,27 @@
+.background {
+  display: block;
+
+  &-sky {
+    position: absolute;
+    z-index: 0;  // fix Safari bug
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to top, #d0c5ac, #adbdb1);
+  }
+
+  &-cloud-1 {
+    height: 0;
+  }
+
+  &-rail {
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    top: 100%;
+    height: em(16px);
+    background-image: url('../images/bg/basic/rails.svg');
+    background-size: contain;
+  }
+}

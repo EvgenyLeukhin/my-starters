@@ -1,0 +1,275 @@
+.station-10 {
+  z-index: 10;
+  width: em(3000px);
+
+  & > div {
+    position: absolute;
+    z-index: 2;
+    background-repeat: no-repeat;
+  }
+
+  .clouds {
+    background-image:
+      url(../images/bg/clouds/cloud1.png),
+      url(../images/bg/clouds/cloud3.png),
+      url(../images/bg/clouds/cloud2.png);
+    background-position: em(100px) em(120px), em(750px) em(-15px), em(370px) em(-50px);
+    background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+  }
+
+  .fireworks {
+    position: absolute;
+    height: em(260px);
+    top: 0;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-image: url(../images/station-10/fireworks.gif);
+  }
+
+  .crowd {
+    position: absolute;
+    left: 50%;
+    bottom: em(-10px);
+    z-index: 3;
+    margin-left: em(-555px);
+    width: em(1110px);
+    height: em(150px);
+    background-repeat: no-repeat;
+    background-image: url(../images/station-10/crowd4-2.svg);
+    background-size: cover;
+    background-position: 0 0;
+  }
+
+  .build {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: em(1190px);
+    height: em(440px);
+    margin-left: em(-595px);
+    background-repeat: no-repeat;
+    background-image: url(../images/station-1/belorusskiy2-2.png);
+    background-size: contain;
+    background-position: 0 bottom;
+  }
+
+  .left {
+    position: absolute;
+    z-index: 2;
+    left: em(-403px);
+    bottom: 0;
+    width: em(2620px);
+    height: em(330px);
+    background-position: em(10px) bottom, left bottom;
+    background-repeat: no-repeat;
+    background-size: em(130px) auto, contain;
+    background-image:
+      url(../images/bg/trees/tree1.svg),
+      url(../images/station-1/moscowBack.svg);
+  }
+
+  .right {
+    position: absolute;
+    z-index: 2;
+    right: em(-740px);
+    bottom: 0;
+    width: em(1430px);
+    height: em(330px);
+    background-image:
+      url(../images/bg/trees/tree2.svg),
+      url(../images/bg/trees/tree1.svg),
+      url(../images/station-1/crowd1-light.svg);
+    background-position:
+      em(710px) bottom,
+      em(920px) bottom,
+      em(720px) bottom;
+    background-repeat: no-repeat;
+    background-size:
+      em(230px) auto,
+      em(120px) auto,
+      em(90px) auto;
+  }
+}
+
+.station-10-scene {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  overflow: visible;
+
+  .photo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: em(53px);
+    padding-left: em(20px);
+    padding-right: em(20px);
+    padding-bottom: em(27px);
+    color: #302a1e;
+  }
+
+  &-photo-1.photo {
+    z-index: 11;
+    width: em(230px);
+    height: em(180px);
+    margin-left: em(-142px);
+    margin-top: em(-150px);
+    background-image: url(../images/bg/card1.png);
+    padding-top: em(40px, 9px);
+    padding-left: em(20px, 9px);
+    padding-right: em(20px, 9px);
+    padding-bottom: em(40px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-2 {
+    z-index: 10;
+    width: em(340px);
+    height: em(220px);
+    margin-left: em(-185px);
+    margin-top: em(-5px);
+    background-image: url(../images/station-1/cards/02.png);
+  }
+
+  &-photo-3 {
+    z-index: 7;
+    width: em(345px);
+    height: em(225px);
+    margin-left: em(-200px);
+    margin-top: em(-185px);
+    background-image: url(../images/station-10/cards/02.png);
+    transform: rotate(8deg);
+  }
+
+  &-photo-4.photo {
+    z-index: 8;
+    width: em(320px);
+    height: em(210px);
+    margin-left: em(-180px);
+    margin-top: em(35px);
+    background-image: url(../images/bg/card3.png);
+    padding-top: em(40px, 9px);
+    padding-left: em(40px, 9px);
+    padding-right: em(40px, 9px);
+    padding-bottom: em(40px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-5.photo {
+    z-index: 6;
+    width: em(245px);
+    height: em(160px);
+    margin-left: em(-150px);
+    margin-top: em(-150px);
+    background-image: url(../images/bg/card2.png);
+    padding-top: em(45px, 9px);
+    padding-left: em(20px, 9px);
+    padding-right: em(20px, 9px);
+    padding-bottom: em(40px, 9px);
+
+    p {
+      font-size: em(12px, 9px);
+      line-height: em(13px, 9px);
+    }
+  }
+
+  &-photo-6 {
+    z-index: 7;
+    width: em(335px);
+    height: em(230px);
+    margin-left: em(-200px);
+    margin-top: -15px;
+    background-image: url(../images/station-10/cards/03.png);
+  }
+
+  &-photo-7 {
+    z-index: 10;
+    width: em(310px);
+    height: em(415px);
+    margin-left: em(-180px);
+    margin-top: em(-175px);
+    background-image: url(../images/station-10/cards/04.png);
+
+    p[class].card-bottom-text {
+      text-align: left;
+      top: 45%;
+      padding-top: em(5px);
+      padding-left: em(10px);
+      padding-right: em(10px);
+      font-size: em(20px, 9px);
+      line-height: em(10px, 9px);
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .station-10-scene {
+    &-photo-1.photo {
+      margin-left: em(-125px);
+      margin-top: em(-110px);
+    }
+
+    &-photo-2 {
+      margin-left: em(-165px);
+      margin-top: em(45px);
+    }
+
+    &-photo-3 {
+      margin-left: em(-175px);
+    }
+
+    &-photo-4.photo {
+      margin-left: em(-155px);
+    }
+
+    &-photo-5.photo {
+      margin-left: em(-125px);
+    }
+
+    &-photo-6 {
+      margin-left: em(-165px);
+    }
+
+    &-photo-7 {
+      margin-left: em(-152px);
+    }
+  }
+}
+
+@media (max-height: 400px) {
+  .station-10-scene {
+    &-photo-4.photo {
+      margin-top: 0;
+    }
+
+    &-photo-7.photo {
+      margin-top: em(-130px);
+      width: em(220px);
+      margin-left: em(-110px);
+      height: em(300px);
+
+      p[class].card-bottom-text {
+        font-size: em(15px, 9px);
+        line-height: em(9px, 9px);
+      }
+    }
+  }
+}

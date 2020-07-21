@@ -1,0 +1,226 @@
+.scroll-alert {
+  display: none;
+  position: fixed;
+  text-align: center;
+  left: 50%;
+  bottom: calc(#{$rail-line} + #{em(200px)});
+  width: em(400px);
+  margin-left: em(-200px);
+  height: em(100px);
+  background-repeat: no-repeat;
+  background-image: url(../images/bg/scrollarrow2.svg);
+  background-position: center bottom;
+  background-size: em(20px) auto;
+  padding: em(10px);
+  z-index: 1000;
+  transform: translateX(100vw);
+
+  b {
+    font-weight: normal;
+    font-size: em(18px);
+  }
+
+  @media (max-height: $mobile-breakpoint) {
+    bottom: calc(#{$rail-line-mobile-landscape} + #{em(200px)});
+  }
+
+  @include landscape-orientation {
+    font-size: 80%;
+  }
+}
+
+.road {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background-repeat: no-repeat;
+
+  .bg-trees {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.road-1 {
+  background-image:
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud3.png),
+    url(../images/bg/clouds/cloud2.png);
+  background-position: em(100px) em(20px), right top, em(370px) top;
+  background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: 15% bottom, 85% bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-2 {
+  background-image:
+    url(../images/bg/clouds/cloud3.png),
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud2.png);
+  background-position: em(80px) top, right em(25px), em(380px) em(50px);
+  background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: right bottom, em(20px) bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-3 {
+  background-image:
+    url(../images/bg/clouds/cloud2.png),
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud3.png);
+  background-position: em(80px) em(10px), right top, em(400px) em(20px);
+  background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: right bottom, em(10px) bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-4 {
+  background-image:
+    url(../images/bg/clouds/cloud2.png),
+    url(../images/bg/clouds/cloud3.png),
+    url(../images/bg/clouds/cloud1.png);
+  background-position: em(80px) top, right top, em(400px) top;
+  background-size: em(200px) auto, em(180px) auto, em(150px) auto;
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: right bottom, em(30px) bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-5 {
+  background-image:
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud2.png),
+    url(../images/bg/clouds/cloud3.png);
+  background-position: em(70px) top, right top, em(420px) top;
+  background-size: em(180px) auto, em(220px) auto, em(130px) auto;
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: em(40px) bottom, right bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-6 {
+  background-image:
+    url(../images/bg/clouds/cloud3.png),
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud2.png);
+  background-position: em(90px) top, right top, em(450px) top;
+  background-size: em(220px) auto, em(200px) auto, em(170px) auto;
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: em(750px) bottom, em(20px) bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-7 {
+  background-image:
+    url(../images/bg/clouds/cloud2.png),
+    url(../images/bg/clouds/cloud3.png),
+    url(../images/bg/clouds/cloud1.png);
+  background-position: em(80px) top, right top, em(400px) top;
+  background-size: em(200px) auto, em(180px) auto, em(150px) auto;
+  transform: scaleX(-1);
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: em(750px) bottom, em(20px) bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-8 {
+  background-image:
+    url(../images/bg/clouds/cloud2.png),
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud3.png);
+  background-position: em(80px) em(10px), right top, em(400px) em(20px);
+  background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+  transform: scaleX(-1);
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: em(20px) bottom, right bottom;
+    background-size: em(150px) auto, em(200px) auto;
+  }
+}
+
+.road-9 {
+  background-image:
+    url(../images/bg/clouds/cloud3.png),
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud2.png);
+  background-position: em(80px) top, right em(25px), em(380px) em(50px);
+  background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+  transform: scaleX(-1);
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: em(750px) bottom, em(20px) bottom;
+    background-size: em(150px) auto, em(200px) auto;
+    transform: scaleX(-1);
+  }
+}
+
+.road-10 {
+  background-image:
+    url(../images/bg/clouds/cloud1.png),
+    url(../images/bg/clouds/cloud3.png),
+    url(../images/bg/clouds/cloud2.png);
+  background-position: em(100px) em(120px), left top, em(370px) top;
+  background-size: em(240px) auto, em(200px) auto, em(180px) auto;
+  transform: scaleX(-1);
+
+  .bg-trees {
+    background-image: url(../images/bg/trees/tree1.svg), url(../images/bg/trees/tree2.svg);
+    background-position: em(20px) bottom, right bottom;
+    background-size: em(150px) auto, em(200px) auto;
+    transform: scaleX(-1);
+  }
+}
+
+// // fix mobile layout road-1
+// @media (max-width: 900px) {
+//   .road {
+//     // padding-left: 100vw;
+//     // padding-right: 100vw;
+
+//     &.road-1 {
+//       padding-left: 0;
+//       padding-right: 0;
+//       z-index: 20;
+//       left: 50%;
+//       margin-left: -125vw;
+//       width: 250vw;
+//     }
+//   }
+// }
+
+@media (max-width: $mobile-breakpoint) {
+  .road { min-width: 300%; }
+}

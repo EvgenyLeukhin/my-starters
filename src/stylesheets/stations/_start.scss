@@ -1,0 +1,211 @@
+.start-scene {
+  position: fixed !important;
+  z-index: 15;
+
+  .photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &-photo-1.photo {
+    z-index: 10;
+    width: em(430px);
+    height: em(470px);
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    padding: em(40px) em(20px);
+    color: #302a1e;
+
+    h2 {
+      font-weight: normal;
+      font-size: em(22px);
+      margin-bottom: em(15px, 22px);
+      text-align: center;
+      color: #da4216;
+    }
+
+    p {
+      font-size: em(14px);
+      line-height: em(17px, 14px);
+      margin-bottom: em(3px);
+    }
+
+    .arrow-down {
+      visibility: hidden;
+      display: block;
+
+      width: em(80px);
+
+      margin: em(10px) auto 0;
+      padding: em(4px) 0;
+
+      border: 2px solid #4e4838;
+
+      font-size: em(20px);
+      font-weight: 300;
+      color: #676151;
+      text-align: center;
+      text-decoration: none;
+    }
+  }
+
+  &-photo-2 {
+    z-index: 9;
+    width: em(335px);
+    height: em(215px);
+    margin-left: em(-150px);
+    margin-top: em(-340px);
+    transform: rotate(-8deg);
+  }
+
+  &-photo-3 {
+    z-index: 8;
+    width: em(361px);
+    height: em(275px);
+    margin-left: em(137px);
+    margin-top: em(-288px);
+    transform: rotate(5deg);
+  }
+
+  &-photo-4 {
+    z-index: 8;
+    width: em(340px);
+    height: em(206px);
+    margin-left: em(110px);
+    margin-top: em(-94px);
+    transform: rotate(6deg);
+  }
+
+  &-photo-5 {
+    z-index: 6;
+    width: em(443px);
+    height: em(243px);
+    margin-left: em(-485px);
+    margin-top: em(-291px);
+    transform: rotate(18deg);
+  }
+
+  &-photo-6 {
+    z-index: 7;
+    width: em(350px);
+    height: em(225px);
+    margin-left: em(-484px);
+    margin-top: em(-104px);
+    transform: rotate(-6deg);
+  }
+
+  &-photo-7 {
+    z-index: 9;
+    width: em(290px);
+    height: em(220px);
+    margin-left: em(133px);
+    margin-top: em(90px);
+    transform: rotate(22deg);
+  }
+
+  &-photo-8 {
+    z-index: 6;
+    width: em(350px);
+    height: em(225px);
+    margin-left: em(-480px);
+    margin-top: em(63px);
+    transform: rotate(-16deg);
+  }
+
+  &-photo-9 {
+    z-index: 8;
+    width: em(330px);
+    height: em(225px);
+    margin-left: em(-26px);
+    margin-top: em(147px);
+    transform: rotate(-12deg);
+  }
+
+  &-photo-10 {
+    z-index: 7;
+    width: em(370px);
+    height: em(255px);
+    margin-left: em(-282px);
+    margin-top: em(145px);
+    transform: rotate(15deg);
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .start-scene {
+    &-photo-1.photo {
+      width: em(400px);
+      height: em(500px);
+      background-size: 100% 100%;
+
+      h2 {
+        margin-bottom: em(20px, 22px);
+      }
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .start-scene {
+    &-photo-1.photo {
+      padding: em(22px) em(12px);
+      width: em(320px);
+      height: em(520px);
+
+      .arrow-down {
+        margin: em(5px) auto 0;
+      }
+
+      h2 {
+        margin-bottom: em(10px, 22px);
+      }
+    }
+  }
+}
+
+@include landscape-orientation {
+  .start-scene {
+    &-photo-1.photo {
+      width: em(600px);
+      height: auto;
+      min-height: em(350px);
+      background-size: 100% 100%;
+      padding: em(30px) em(30px);
+
+      .arrow-down {
+        margin: em(5px) auto 0;
+      }
+    }
+  }
+}
+
+// fix iPhone 5 landscape mode
+@media (max-height: 360px) {
+  .start-scene {
+    &-photo-1.photo {
+      width: em(550px);
+      min-height: em(250px);
+      padding: em(20px) em(30px);
+
+      p {
+        font-size: em(12px);
+        line-height: em(14px, 14px);
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .start-scene {
+    font-size: 80%;
+  }
+}
+
+@media (max-height: 400px) {
+  .start-scene {
+    font-size: 80%;
+  }
+}

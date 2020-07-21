@@ -1,0 +1,135 @@
+.social-icons {
+  position: fixed;
+  top: em(3px);
+  right: em(15px);
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: em(160px);
+  height: em(30px);
+
+  li {
+    &.vk {
+      a {
+        display: inline-flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: em(30px);
+        height: em(30px);
+        background-image: url(../images/social/icon_vk.svg);
+        background-size: 55% auto;
+
+        span {
+          font-size: 0 !important;
+        }
+      }
+    }
+
+    &.fb {
+      z-index: 10;
+      overflow: hidden !important;
+      display: inline-flex;
+      width: em(30px);
+      height: em(30px);
+      background-image: url(../images/social/icon_fb.svg);
+      background-size: 28% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      & > * {
+        color: transparent !important;
+        opacity: 0 !important;
+      }
+
+      & > div > span {
+        width: em(30px) !important;
+        height: em(30px) !important;
+        margin-top: em(7px);
+        overflow: hidden !important;
+      }
+
+      & > div > span > iframe {
+        width: em(30px) !important;
+        overflow: hidden !important;
+        height: em(30px) !important;
+      }
+    }
+
+    &.oclass {
+      display: inline-flex;
+      width: em(30px);
+      height: em(30px);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/social/icon_ok.svg);
+      background-size: 35% auto;
+
+      a {
+        opacity: 0;
+        position: relative;
+        top: em(7px);
+        left: em(5px);
+      }
+    }
+
+    &.wh {
+      a {
+        display: inline-flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: em(30px);
+        height: em(30px);
+        position: relative;
+        top: em(1px);
+        background-image: url(../images/social/icon_wu.svg);
+        background-size: 55% auto;
+      }
+    }
+
+    &.te {
+      a {
+        display: inline-flex;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: em(30px);
+        height: em(30px);
+        position: relative;
+        top: em(1px);
+        background-image: url(../images/social/icon_te.svg);
+        background-size: 55% auto;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .social-icons {
+    width: em(250px);
+    height: em(40px);
+
+    li {
+      width: em(40px) !important;
+      height: em(40px) !important;
+
+      a {
+        width: em(40px) !important;
+        height: em(40px) !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .social-icons {
+    li {
+      width: em(25px) !important;
+      height: em(25px) !important;
+
+      a {
+        width: em(25px) !important;
+        height: em(25px) !important;
+      }
+    }
+  }
+}

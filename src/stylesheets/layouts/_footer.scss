@@ -1,0 +1,40 @@
+.footer {
+  background: transparent;
+  position: fixed;
+  z-index: 100;
+  height: em(50px);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: em(27px);
+  padding-bottom: em(12px);
+  padding-right: em(17px);
+
+  .life-logo {
+    width: em(58px);
+    height: auto;
+  }
+
+  .rzd-logo {
+    width: em(58px);
+    height: auto;
+  }
+}
+
+@media (max-height: 500px) {
+  .footer {
+    height: 0;
+    padding-left: em(5px);
+    padding-bottom: em(10px);
+    padding-right: em(5px);
+
+    .life-logo,
+    .rzd-logo {
+      width: em(45px);
+      margin-top: em(-37px);
+    }
+  }
+}

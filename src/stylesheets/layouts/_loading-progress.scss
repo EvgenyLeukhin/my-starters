@@ -1,0 +1,34 @@
+.loading-progress {
+  margin-top: em(12px);
+
+  &-number {
+    font-size: em(16px);
+    color: #676151;
+    text-align: center;
+  }
+
+  &-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateX(-100%);
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #4e4838;
+
+    &-wrapper {
+      overflow: hidden;
+      position: relative;
+      width: em(230px);
+      height: em(25px);
+
+      margin: em(5px) auto 0;
+      padding: em(2px);
+
+      border: 2px solid #4e4838;
+    }
+  }
+}
